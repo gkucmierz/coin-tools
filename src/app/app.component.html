@@ -1,9 +1,10 @@
 <md-sidenav-container>
+
   <md-sidenav #sidenav
               mode="over"
               class="app-sidenav"
               align="start">
-    Sidenav
+    sidenav
   </md-sidenav>
 
   <md-toolbar color="primary">
@@ -11,7 +12,7 @@
       <md-icon>menu</md-icon>
     </button>
 
-    <span>Yay, Material in Angular 2!</span>
+    <span>Coin Tools</span>
 
     <button md-icon-button [md-menu-trigger-for]="menu">
       <md-icon>more_vert</md-icon>
@@ -23,21 +24,6 @@
     <button md-menu-item>Option 2</button>
   </md-menu>
 
-  <md-card>
-    <button md-button>All</button>
-    <button md-raised-button>Of</button>
-    <button md-raised-button color="primary">The</button>
-    <button md-raised-button color="accent">Buttons</button>
-  </md-card>
-
-  <span class="done">
-    <button md-fab>
-      <md-icon>check circle</md-icon>
-    </button>
-  </span>
-
-  <md-card>
-    <button md-raised-button (click)="_toggleSidebar()">Toggle sidebar</button>
-  </md-card>
+  <router-outlet></router-outlet>
 
 </md-sidenav-container>
