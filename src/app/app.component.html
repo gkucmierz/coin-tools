@@ -1,6 +1,15 @@
-<div>
+<md-sidenav-container>
+  <md-sidenav #sidenav
+              mode="over"
+              class="app-sidenav"
+              align="start">
+    Sidenav
+  </md-sidenav>
+
   <md-toolbar color="primary">
-    <span><md-icon>mood</md-icon></span>
+    <button md-icon-button (click)="sidenav.toggle()">
+      <md-icon>menu</md-icon>
+    </button>
 
     <span>Yay, Material in Angular 2!</span>
 
@@ -8,6 +17,7 @@
       <md-icon>more_vert</md-icon>
     </button>
   </md-toolbar>
+
   <md-menu x-position="before" #menu="mdMenu">
     <button md-menu-item>Option 1</button>
     <button md-menu-item>Option 2</button>
@@ -25,4 +35,9 @@
       <md-icon>check circle</md-icon>
     </button>
   </span>
-</div>
+
+  <md-card>
+    <button md-raised-button (click)="_toggleSidebar()">Toggle sidebar</button>
+  </md-card>
+
+</md-sidenav-container>

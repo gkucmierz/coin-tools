@@ -1,11 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import '~@angular/material/core/theming/prebuilt/indigo-pink.css';
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
 
+html {
+  height: 100%;
+}
 
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
+
+  height: 100%;
 }
 
 md-card {
