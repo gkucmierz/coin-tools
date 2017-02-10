@@ -15,12 +15,12 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
 export const routeConfig:Routes = [
   {
-      path: '',
-      component: HomeComponent
+    path: '',
+    component: HomeComponent
   },
   {
-      path: '**',
-      component: NotFoundComponent
+    path: '**',
+    component: NotFoundComponent
   }
 ];
 
