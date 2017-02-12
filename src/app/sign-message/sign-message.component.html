@@ -1,32 +1,30 @@
 
 <md-card>
+
   <md-input-container class="full-width">
     <textarea md-input
               [(ngModel)]="msg"
               placeholder="message"
+              (keyup)="keyup()"
               rows="5"></textarea>
   </md-input-container>
 
   <md-input-container class="full-width">
     <input md-input
-           placeholder="address"
+           [(ngModel)]="privkey"
+           placeholder="privkey"
+           (keyup)="keyup()"
            align="start"/>
   </md-input-container>
 
   <p>Signed Message</p>
 
-  <pre class="signed-message">
-    {{msg}}
-  </pre>
+  <md-input-container class="full-width">
+    <textarea md-input
+              [(ngModel)]="signedMsg"
+              placeholder="signed message"
+              rows="8"
+              readonly></textarea>
+  </md-input-container>
 
 </md-card>
-
-
-
-<!--
-
-        <md-input-container class="md-block">
-          <label>Biography</label>
-          <textarea ng-model="user.biography" md-maxlength="150" rows="5" md-select-on-focus></textarea>
-        </md-input-container>
- -->
