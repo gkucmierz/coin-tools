@@ -1,0 +1,32 @@
+
+<md-card>
+  <md-input-container class="full-width">
+    <textarea md-input
+              [(ngModel)]="msg"
+              placeholder="message"
+              rows="5"></textarea>
+  </md-input-container>
+
+  <md-input-container class="full-width">
+    <input md-input
+           placeholder="address"
+           align="start"/>
+  </md-input-container>
+
+  <p>Signed Message</p>
+
+  <pre class="signed-message">
+    {{msg}}
+  </pre>
+
+</md-card>
+
+
+
+<!--
+
+        <md-input-container class="md-block">
+          <label>Biography</label>
+          <textarea ng-model="user.biography" md-maxlength="150" rows="5" md-select-on-focus></textarea>
+        </md-input-container>
+ -->
