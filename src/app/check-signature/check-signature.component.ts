@@ -31,6 +31,8 @@ IPPSaoJkUyCpAVFLctuyDd2VF+0rfOCuoteOMF6xQtrBV5zJTXYqNt9/cSYahIGntL5ibZgS+tp6Jp/Q
       } catch (e) {
         this.valid = false;
       }
+    } else {
+      this.valid = false;
     }
   }
 
