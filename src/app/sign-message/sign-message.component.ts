@@ -26,7 +26,7 @@ export class SignMessageComponent implements OnInit {
     try {
       let privkey = PrivateKey.fromString(this.privkey);
       let address = privkey.toAddress()+'';
-      console.log(address);
+
       this.signedMsg = `-----BEGIN BITCOIN SIGNED MESSAGE-----
 ${msg}
 -----BEGIN SIGNATURE-----

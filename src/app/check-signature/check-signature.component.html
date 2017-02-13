@@ -1,0 +1,23 @@
+
+<md-card>
+
+  <md-input-container class="full-width">
+    <textarea md-input
+              [(ngModel)]="signedMsg"
+              placeholder="signed message"
+              (keyup)="change()"
+              (change)="change()"
+              rows="12"></textarea>
+  </md-input-container>
+
+  <div *ngIf="valid">
+    <md-icon class="valid">done</md-icon>
+    <span>Message is correctly signed</span>
+  </div>
+
+  <div *ngIf="!valid">
+    <md-icon class="not-valid">error_outline</md-icon>
+    <span>Signature is not valid</span>
+  </div>
+
+</md-card>
