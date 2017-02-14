@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { BitcoreService } from '../../services/bitcore.service';
 
-let atob = require('atob');
-let btoa = require('btoa');
+let base64 = require('base64-js');
 
 @Component({
   selector: 'app-ecies-encrypt',
@@ -34,7 +33,7 @@ Then only your recipient can decrypt this message and also he can be sure that t
       let sender = ECIES()
         .privateKey(privkey)
         .publicKey(pubkey);
-      this.encryptedMsg = btoa(sender.encrypt(this.msg || ''));
+      this.encryptedMsg = base64.fromByteArray(sender.encrypt(this.msg || ''));
     } catch (e) {
       console.error(e);
     };

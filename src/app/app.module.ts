@@ -18,6 +18,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { SignMessageComponent } from './sign-message/sign-message.component';
 import { CheckSignatureComponent } from './check-signature/check-signature.component';
 import { EciesComponent } from './ecies/ecies.component';
+import { EciesEncryptComponent } from './ecies/ecies-encrypt/ecies-encrypt.component';
+import { EciesDecryptComponent } from './ecies/ecies-decrypt/ecies-decrypt.component';
 
 const routeConfig:Routes = [
   {
@@ -34,7 +36,12 @@ const routeConfig:Routes = [
   },
   {
     path: 'ecies',
-    component: EciesComponent
+    component: EciesComponent,
+    children: [
+      { path: '', redirectTo: 'encrypt', pathMatch: 'full' },
+      { path: 'encrypt', component: EciesEncryptComponent },
+      { path: 'decrypt', component: EciesDecryptComponent }
+    ]
   },
   {
     path: '**',
@@ -49,7 +56,9 @@ const routeConfig:Routes = [
     NotFoundComponent,
     SignMessageComponent,
     CheckSignatureComponent,
-    EciesComponent
+    EciesComponent,
+    EciesEncryptComponent,
+    EciesDecryptComponent
   ],
   imports: [
     BrowserModule,

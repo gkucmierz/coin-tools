@@ -1,3 +1,38 @@
-<p>
-  ecies-decrypt works!
-</p>
+
+<md-input-container class="full-width">
+  <textarea md-input
+            [(ngModel)]="encryptedMsg"
+            placeholder="Encrypted Message"
+            (keyup)="update()"
+            (change)="update()"
+            rows="5"></textarea>
+</md-input-container>
+
+<md-input-container class="full-width">
+  <input md-input
+         [(ngModel)]="recipientPriv"
+         placeholder="Recipient Privkey"
+         (keyup)="update()"
+         (change)="update()"
+         align="start"/>
+</md-input-container>
+
+<md-input-container class="full-width">
+  <input md-input
+         [(ngModel)]="senderPub"
+         placeholder="Sender Pubkey"
+         (keyup)="update()"
+         (change)="update()"
+         align="start"/>
+</md-input-container>
+
+
+<p>Decrypted Message</p>
+
+<md-input-container class="full-width">
+  <textarea md-input
+            [(ngModel)]="msg"
+            placeholder="Message"
+            rows="8"
+            readonly></textarea>
+</md-input-container>
