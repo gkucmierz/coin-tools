@@ -1,3 +1,38 @@
-<p>
-  ecies-encrypt works!
-</p>
+
+<md-input-container class="full-width">
+  <textarea md-input
+            [(ngModel)]="msg"
+            placeholder="message"
+            (keyup)="update()"
+            (change)="update()"
+            rows="5"></textarea>
+</md-input-container>
+
+<md-input-container class="full-width">
+  <input md-input
+         [(ngModel)]="senderPriv"
+         placeholder="Sender Privkey"
+         (keyup)="update()"
+         (change)="update()"
+         align="start"/>
+</md-input-container>
+
+<md-input-container class="full-width">
+  <input md-input
+         [(ngModel)]="recipientAddr"
+         placeholder="Recipient Address"
+         (keyup)="update()"
+         (change)="update()"
+         align="start"/>
+</md-input-container>
+
+
+<p>Encrypted Message</p>
+
+<md-input-container class="full-width">
+  <textarea md-input
+            [(ngModel)]="encryptedMsg"
+            placeholder="Encrypted Message"
+            rows="8"
+            readonly></textarea>
+</md-input-container>
