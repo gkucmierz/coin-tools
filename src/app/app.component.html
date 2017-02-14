@@ -3,7 +3,8 @@
   <md-sidenav #sidenav
               mode="over"
               class="app-sidenav"
-              align="start">
+              align="start"
+              (swipeleft)="sidenav.close()">
 
     <md-list>
       <md-list-item>
