@@ -4,8 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 
-import { MaterialModule } from '@angular/material';
-import { MdButton } from '@angular2-material/button';
+import { MaterialModule, MdButton } from '@angular/material';
 
 import { AppComponent } from './app.component';
 
