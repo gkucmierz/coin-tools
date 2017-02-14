@@ -8,6 +8,7 @@ export class BitcoreService {
   constructor() {
     this.lib = window['require']('bitcore-lib');
     this.message = window['require']('bitcore-message');
+    this.ecies = window['require']('bitcore-ecies');
   }
 
 }
