@@ -35,8 +35,16 @@ Then only your recipient can decrypt this message and also he can be sure that t
         .publicKey(pubkey);
       this.encryptedMsg = base64.fromByteArray(sender.encrypt(this.msg || ''));
     } catch (e) {
+      this.encryptedMsg = '';
       console.error(e);
     };
+  }
+
+  reset() {
+    this.msg = '';
+    this.senderPriv = '';
+    this.recipientAddr = '';
+    this.update();
   }
 
   ngOnInit() {

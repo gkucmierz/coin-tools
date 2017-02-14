@@ -38,8 +38,16 @@ export class EciesDecryptComponent implements OnInit {
 
       this.msg = recipient.decrypt(new Buffer(msgBuff)).toString();
     } catch (e) {
+      this.encryptedMsg = '';
       console.error(e);
     };
+  }
+
+  reset() {
+    this.encryptedMsg = '';
+    this.recipientPriv = '';
+    this.senderPub = '';
+    this.update();
   }
 
   ngOnInit() {
