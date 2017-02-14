@@ -16,7 +16,7 @@ Then only your recipient can decrypt this message and also he can be sure that t
   `;
   public senderPriv = 'KwSfvc92pxP9KMEMBNSn2YHuV8GV5XsRp8mah1mcnmWz33sdYGvU';
   // L49Xk4WCeYFeMBBzsa9B4sdWANTi5eRA9JCEq8gZjCn19xqjrzYP
-  public recipientAddr = '027570f6a541a5af6f84d32665f1747f9740b132aa5a7f2728b76b5b0513ba7695';
+  public recipientPubkey = '027570f6a541a5af6f84d32665f1747f9740b132aa5a7f2728b76b5b0513ba7695';
   public encryptedMsg;
   public bitcore;
 
@@ -29,7 +29,7 @@ Then only your recipient can decrypt this message and also he can be sure that t
     const ECIES = this.bitcore.ecies;
     try {
       let privkey = PrivateKey.fromString(this.senderPriv);
-      let pubkey = new PublicKey(this.recipientAddr);
+      let pubkey = new PublicKey(this.recipientPubkey);
       let sender = ECIES()
         .privateKey(privkey)
         .publicKey(pubkey);
@@ -43,7 +43,7 @@ Then only your recipient can decrypt this message and also he can be sure that t
   reset() {
     this.msg = '';
     this.senderPriv = '';
-    this.recipientAddr = '';
+    this.recipientPubkey = '';
     this.update();
   }
 
