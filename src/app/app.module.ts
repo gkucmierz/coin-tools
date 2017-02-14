@@ -17,8 +17,9 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SignMessageComponent } from './sign-message/sign-message.component';
 import { CheckSignatureComponent } from './check-signature/check-signature.component';
+import { EciesComponent } from './ecies/ecies.component';
 
-export const routeConfig:Routes = [
+const routeConfig:Routes = [
   {
     path: '',
     component: HomeComponent
@@ -32,6 +33,10 @@ export const routeConfig:Routes = [
     component: CheckSignatureComponent
   },
   {
+    path: 'ecies',
+    component: EciesComponent
+  },
+  {
     path: '**',
     component: NotFoundComponent
   }
@@ -43,7 +48,8 @@ export const routeConfig:Routes = [
     HomeComponent,
     NotFoundComponent,
     SignMessageComponent,
-    CheckSignatureComponent
+    CheckSignatureComponent,
+    EciesComponent
   ],
   imports: [
     BrowserModule,

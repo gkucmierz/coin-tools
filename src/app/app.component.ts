@@ -8,4 +8,23 @@ import { MaterialModule } from '@angular/material';
 })
 export class AppComponent {
   title = 'app works!';
+
+  tools = [
+    {
+      route: '',
+      name: 'Home'
+    },
+    {
+      route: 'sign-message',
+      name: 'Sign Message'
+    },
+    {
+      route: 'check-signature',
+      name: 'Check Signature'
+    },
+    {
+      route: 'ecies',
+      name: 'ECIES'
+    }
+  ];
 }
