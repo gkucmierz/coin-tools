@@ -38,7 +38,7 @@ export class EciesDecryptComponent implements OnInit {
 
       this.msg = recipient.decrypt(new Buffer(msgBuff)).toString();
     } catch (e) {
-      this.encryptedMsg = '';
+      this.msg = '';
       console.error(e);
     };
   }
