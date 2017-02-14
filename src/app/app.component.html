@@ -8,7 +8,8 @@
 
     <md-list>
       <md-list-item *ngFor="let tool of tools">
-        <a routerLink="/{{tool.route}}">{{tool.name}}</a>
+        <a routerLink="/{{tool.route}}"
+           (click)="sidenav.close()">{{tool.name}}</a>
       </md-list-item>
     </md-list>
 
