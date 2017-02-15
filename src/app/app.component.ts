@@ -25,6 +25,10 @@ export class AppComponent {
     {
       route: 'ecies',
       name: 'ECIES'
+    },
+    {
+      route: 'send-from-privkey',
+      name: 'Send from Privkey'
     }
   ];
 }

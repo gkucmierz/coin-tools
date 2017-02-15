@@ -19,6 +19,7 @@ import { CheckSignatureComponent } from './check-signature/check-signature.compo
 import { EciesComponent } from './ecies/ecies.component';
 import { EciesEncryptComponent } from './ecies/ecies-encrypt/ecies-encrypt.component';
 import { EciesDecryptComponent } from './ecies/ecies-decrypt/ecies-decrypt.component';
+import { SendFromPrivkeyComponent } from './send-from-privkey/send-from-privkey.component';
 
 const routeConfig:Routes = [
   {
@@ -43,6 +44,10 @@ const routeConfig:Routes = [
     ]
   },
   {
+    path: 'send-from-privkey',
+    component: SendFromPrivkeyComponent
+  },
+  {
     path: '**',
     component: NotFoundComponent
   }
@@ -57,7 +62,8 @@ const routeConfig:Routes = [
     CheckSignatureComponent,
     EciesComponent,
     EciesEncryptComponent,
-    EciesDecryptComponent
+    EciesDecryptComponent,
+    SendFromPrivkeyComponent
   ],
   imports: [
     BrowserModule,
