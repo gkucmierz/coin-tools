@@ -30,7 +30,7 @@ export class DataService {
     if (opts.corsProxy) url = this.proxyUrl(url);
 
     return this.http.post(url, data, null)
-      .map(this.extractData)
+      .map(this.extractData.bind(this))
       .catch(this.handleError);
   }
 
