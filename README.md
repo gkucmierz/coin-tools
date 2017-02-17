@@ -1,7 +1,7 @@
 
 # Coin Tools
 
-[![Join the chat at https://gitter.im/angular/angular-cli](https://badges.gitter.im/angular/angular-cli.svg)](https://gitter.im/angular/angular-cli?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/angular/angular-cli](https://badges.gitter.im/gkucmierz/coin-tools.svg)](https://gitter.im/Coin-Tools/Lobby)
 [![dependencies Status](https://david-dm.org/gkucmierz/coin-tools/status.svg)](https://david-dm.org/gkucmierz/coin-tools)
 [![devDependencies Status](https://david-dm.org/gkucmierz/coin-tools/dev-status.svg)](https://david-dm.org/gkucmierz/coin-tools?type=dev)
 [![Known Vulnerabilities](https://snyk.io/test/github/gkucmierz/coin-tools/badge.svg)](https://snyk.io/test/github/gkucmierz/coin-tools)
