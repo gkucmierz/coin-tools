@@ -1,21 +1,28 @@
 import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 
+import { SlimLoadingBarService } from 'ng2-slim-loading-bar';
+
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
+import 'rxjs/add/observable/throw'
 
 @Injectable()
 export class DataService {
   private corsProxyEndpoint = 'https://free-cors-proxy.herokuapp.com/';
 
-  constructor(private http: Http) { }
+  constructor(private http: Http,
+              private slimLoadingBarService: SlimLoadingBarService) {
+  }
 
   get(url, opts:any = {}) {
     if (opts.corsProxy) url = this.proxyUrl(url);
 
+    this.slimLoadingBarService.start();
+
     return this.http.get(url)
-      .map(this.extractData)
+      .map(this.extractData.bind(this))
       .catch(this.handleError);
   }
 
@@ -28,6 +35,7 @@ export class DataService {
   }
 
   private extractData(res: Response) {
+    this.slimLoadingBarService.complete();
     try {
       return res.json();
     } catch(e) {
@@ -36,6 +44,8 @@ export class DataService {
   }
 
   private handleError (error: Response | any) {
+    console.log(this.slimLoadingBarService);
+    this.slimLoadingBarService.complete();
     // In a real world app, we might use a remote logging infrastructure
     let errMsg: string;
     if (error instanceof Response) {

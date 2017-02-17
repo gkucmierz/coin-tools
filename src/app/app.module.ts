@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 
 import { MaterialModule, MdButton } from '@angular/material';
+import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
 
 import { AppComponent } from './app.component';
 
@@ -72,6 +73,7 @@ const routeConfig:Routes = [
     FormsModule,
     HttpModule,
     MaterialModule.forRoot(),
+    SlimLoadingBarModule.forRoot(),
     RouterModule.forRoot(routeConfig)
   ],
   providers: [
