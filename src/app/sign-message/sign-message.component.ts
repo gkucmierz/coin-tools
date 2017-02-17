@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 import { BitcoreService } from '../services/bitcore.service';
 
+import { Store } from '@ngrx/store';
+import { SET_TITLE } from '../reducers/toolbarReducer';
+
 @Component({
   selector: 'app-sign-message',
   templateUrl: './sign-message.component.html',
@@ -11,11 +14,9 @@ export class SignMessageComponent implements OnInit {
   public msg;
   public signedMsg;
   public privkey;
-  public bitcore;
 
-  constructor(_bitcore:BitcoreService) {
-    this.bitcore = _bitcore;
-  }
+  constructor(private bitcore: BitcoreService,
+              private store: Store<any>) { }
 
   keyup() {
     const {PrivateKey} = this.bitcore.lib;
@@ -38,6 +39,7 @@ ${Message(msg).sign(privkey)}
   }
 
   ngOnInit() {
+    this.store.dispatch({ type: SET_TITLE, payload: 'Sign Message' });
   }
 
 }

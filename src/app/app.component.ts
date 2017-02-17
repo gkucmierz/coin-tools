@@ -1,13 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MaterialModule } from '@angular/material';
+
+import { Store } from '@ngrx/store';
+import { SET_TITLE } from './reducers/toolbarReducer';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'app works!';
+export class AppComponent implements OnInit {
+  public title;
 
   tools = [
     {
@@ -31,4 +34,14 @@ export class AppComponent {
       name: 'Send from Privkey'
     }
   ];
+
+  constructor(private store: Store<any>) {
+    this.store.dispatch({ type: SET_TITLE, payload: 'Coin Tools' });
+  }
+
+  ngOnInit() {
+    this.store.select('toolbar').subscribe(store => {
+      this.title = store['title'];
+    });
+  }
 }

@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 import { BitcoreService } from '../../services/bitcore.service';
 
+import { Store } from '@ngrx/store';
+import { SET_TITLE } from '../../reducers/toolbarReducer';
+
 let base64 = require('base64-js');
 
 @Component({
@@ -18,11 +21,9 @@ Then only your recipient can decrypt this message and also he can be sure that t
   // L49Xk4WCeYFeMBBzsa9B4sdWANTi5eRA9JCEq8gZjCn19xqjrzYP
   public recipientPubkey = '027570f6a541a5af6f84d32665f1747f9740b132aa5a7f2728b76b5b0513ba7695';
   public encryptedMsg;
-  public bitcore;
 
-  constructor(_bitcore:BitcoreService) {
-    this.bitcore = _bitcore;
-  }
+  constructor(private bitcore:BitcoreService,
+              private store: Store<any>) { }
 
   update() {
     const {PrivateKey, PublicKey} = this.bitcore.lib;
@@ -49,6 +50,7 @@ Then only your recipient can decrypt this message and also he can be sure that t
 
   ngOnInit() {
     this.update();
+    this.store.dispatch({ type: SET_TITLE, payload: 'Encrypt Message' });
   }
 
 }

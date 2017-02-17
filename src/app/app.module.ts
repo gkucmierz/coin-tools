@@ -12,9 +12,20 @@ import { AppComponent } from './app.component';
 
 import 'hammerjs';
 
+// services
 import { BitcoreService } from './services/bitcore.service';
 import { DataService } from './services/data.service';
 
+// Ngrx
+import { StoreModule } from '@ngrx/store';
+import { combineReducers } from '@ngrx/store';
+import { storeLogger } from 'ngrx-store-logger';
+import { compose } from '@ngrx/core/compose';
+
+// reducers
+import { toolbarReducer } from './reducers/toolbarReducer';
+
+// components
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SignMessageComponent } from './sign-message/sign-message.component';
@@ -74,7 +85,14 @@ const routeConfig:Routes = [
     HttpModule,
     MaterialModule.forRoot(),
     SlimLoadingBarModule.forRoot(),
-    RouterModule.forRoot(routeConfig)
+    RouterModule.forRoot(routeConfig),
+    StoreModule.provideStore(
+      compose(
+        storeLogger(),
+        combineReducers
+      )({
+        toolbar: toolbarReducer
+      }))
   ],
   providers: [
     BitcoreService,

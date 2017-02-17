@@ -3,6 +3,9 @@ import { Component, OnInit } from '@angular/core';
 import { BitcoreService } from '../services/bitcore.service';
 import { DataService } from '../services/data.service';
 
+import { Store } from '@ngrx/store';
+import { SET_TITLE } from '../reducers/toolbarReducer';
+
 @Component({
   selector: 'app-send-from-privkey',
   templateUrl: './send-from-privkey.component.html',
@@ -23,7 +26,8 @@ export class SendFromPrivkeyComponent implements OnInit {
   public txHash;
 
   constructor (private bitcore: BitcoreService,
-               private data: DataService) {}
+               private data: DataService,
+               private store: Store<any>) {}
 
   privkeyUpdate() {
     const {PrivateKey} = this.bitcore.lib;
@@ -133,6 +137,7 @@ export class SendFromPrivkeyComponent implements OnInit {
 
   ngOnInit() {
     this.privkeyUpdate();
+    this.store.dispatch({ type: SET_TITLE, payload: 'Send from Privkey' });
   }
 
 }

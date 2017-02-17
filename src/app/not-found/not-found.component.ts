@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Store } from '@ngrx/store';
+import { SET_TITLE } from '../reducers/toolbarReducer';
+
 @Component({
   selector: 'app-not-found',
   templateUrl: './not-found.component.html',
@@ -7,9 +10,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotFoundComponent implements OnInit {
 
-  constructor() { }
+  constructor(private store: Store<any>) { }
 
   ngOnInit() {
+    this.store.dispatch({ type: SET_TITLE, payload: 'Page not found' });
   }
 
 }

@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { BitcoreService } from '../services/bitcore.service';
 
+import { Store } from '@ngrx/store';
+import { SET_TITLE } from '../reducers/toolbarReducer';
+
 @Component({
   selector: 'app-check-signature',
   templateUrl: './check-signature.component.html',
@@ -13,12 +16,10 @@ Signature test
 1AStMhq3k957K3dVtGv5WPVXbUWdHacX7k
 IPPSaoJkUyCpAVFLctuyDd2VF+0rfOCuoteOMF6xQtrBV5zJTXYqNt9/cSYahIGntL5ibZgS+tp6Jp/QUMxlrIA=
 -----END BITCOIN SIGNED MESSAGE-----`;
-  public bitcore;
   public valid = true;
 
-  constructor(_bitcore:BitcoreService) {
-    this.bitcore = _bitcore;
-  }
+  constructor(private bitcore: BitcoreService,
+              private store: Store<any>) { }
 
   change() {
     const Message = this.bitcore.message;
@@ -37,6 +38,7 @@ IPPSaoJkUyCpAVFLctuyDd2VF+0rfOCuoteOMF6xQtrBV5zJTXYqNt9/cSYahIGntL5ibZgS+tp6Jp/Q
   }
 
   ngOnInit() {
+    this.store.dispatch({ type: SET_TITLE, payload: 'Check Signature' });
   }
 
 }

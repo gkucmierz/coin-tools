@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 import { BitcoreService } from '../../services/bitcore.service';
 
+import { Store } from '@ngrx/store';
+import { SET_TITLE } from '../../reducers/toolbarReducer';
+
 let base64 = require('base64-js');
 
 @Component({
@@ -16,11 +19,9 @@ export class EciesDecryptComponent implements OnInit {
   // KwSfvc92pxP9KMEMBNSn2YHuV8GV5XsRp8mah1mcnmWz33sdYGvU
   public senderPub = '034e9f2405361b689e8cbfbcf4b21539f60d29031a2018112776fde90c418690d8';
   public msg;
-  public bitcore;
 
-  constructor(_bitcore:BitcoreService) {
-    this.bitcore = _bitcore;
-  }
+  constructor(private bitcore:BitcoreService,
+              private store: Store<any>) { }
 
   update() {
     const {PrivateKey, PublicKey} = this.bitcore.lib;
@@ -52,6 +53,6 @@ export class EciesDecryptComponent implements OnInit {
 
   ngOnInit() {
     this.update();
+    this.store.dispatch({ type: SET_TITLE, payload: 'Decrypt Message' });
   }
-
 }
