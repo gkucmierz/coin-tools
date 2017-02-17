@@ -34,6 +34,7 @@ import { EciesComponent } from './ecies/ecies.component';
 import { EciesEncryptComponent } from './ecies/ecies-encrypt/ecies-encrypt.component';
 import { EciesDecryptComponent } from './ecies/ecies-decrypt/ecies-decrypt.component';
 import { SendFromPrivkeyComponent } from './send-from-privkey/send-from-privkey.component';
+import { QrReaderComponent } from './qr-reader/qr-reader.component';
 
 const routeConfig:Routes = [
   {
@@ -62,6 +63,10 @@ const routeConfig:Routes = [
     component: SendFromPrivkeyComponent
   },
   {
+    path: 'qr-reader',
+    component: QrReaderComponent
+  },
+  {
     path: '**',
     component: NotFoundComponent
   }
@@ -77,7 +82,8 @@ const routeConfig:Routes = [
     EciesComponent,
     EciesEncryptComponent,
     EciesDecryptComponent,
-    SendFromPrivkeyComponent
+    SendFromPrivkeyComponent,
+    QrReaderComponent
   ],
   imports: [
     BrowserModule,

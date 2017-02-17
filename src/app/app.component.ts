@@ -32,6 +32,10 @@ export class AppComponent implements OnInit {
     {
       route: 'send-from-privkey',
       name: 'Send from Privkey'
+    },
+    {
+      route: 'qr-reader',
+      name: 'QR Reader'
     }
   ];
 
