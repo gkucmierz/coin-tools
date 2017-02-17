@@ -35,6 +35,11 @@ import { EciesEncryptComponent } from './ecies/ecies-encrypt/ecies-encrypt.compo
 import { EciesDecryptComponent } from './ecies/ecies-decrypt/ecies-decrypt.component';
 import { SendFromPrivkeyComponent } from './send-from-privkey/send-from-privkey.component';
 
+
+const rootReducer = compose(storeLogger(), combineReducers)({
+  toolbar: toolbarReducer
+});
+
 const routeConfig:Routes = [
   {
     path: '',
@@ -86,13 +91,7 @@ const routeConfig:Routes = [
     MaterialModule.forRoot(),
     SlimLoadingBarModule.forRoot(),
     RouterModule.forRoot(routeConfig),
-    StoreModule.provideStore(
-      compose(
-        storeLogger(),
-        combineReducers
-      )({
-        toolbar: toolbarReducer
-      }))
+    StoreModule.provideStore(rootReducer)
   ],
   providers: [
     BitcoreService,
