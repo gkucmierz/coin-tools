@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import 'hammerjs';
 
 import { BitcoreService } from './services/bitcore.service';
+import { DataService } from './services/data.service';
 
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -74,7 +75,8 @@ const routeConfig:Routes = [
     RouterModule.forRoot(routeConfig)
   ],
   providers: [
-    BitcoreService
+    BitcoreService,
+    DataService
   ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

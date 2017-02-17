@@ -1,11 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Http, Response } from '@angular/http';
 
 import { BitcoreService } from '../services/bitcore.service';
-
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/catch';
-import 'rxjs/add/operator/map';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-send-from-privkey',
@@ -22,13 +18,12 @@ export class SendFromPrivkeyComponent implements OnInit {
   public serviceFeeAddr = '1BTCuX3D27RoZ1g3TENnTMEkbYfGyusFHb';
   public unspents;
   public receiveAmount;
-  public proxyEndpoint = 'https://free-cors-proxy.herokuapp.com/';
   public unspentsUrlTpl = 'https://blockchain.info/pl/unspent?active=';
   public pushUrl = 'http://btc.blockr.io/api/v1/tx/push';
   public txHash;
 
-  constructor (private http: Http,
-               private bitcore: BitcoreService) {}
+  constructor (private bitcore: BitcoreService,
+               private data: DataService) {}
 
   privkeyUpdate() {
     const {PrivateKey} = this.bitcore.lib;
@@ -37,7 +32,8 @@ export class SendFromPrivkeyComponent implements OnInit {
       this.srcAddr = priv.toAddress().toString();
       this.unspents = null;
       this.getUnspents(this.srcAddr).subscribe(data => {
-        this.unspents = data.map(out => {
+        let utxos = data['unspent_outputs'] || [];
+        this.unspents = utxos.map(out => {
           return {
             txId: out.tx_hash_big_endian,
             outputIndex: out.tx_output_n,
@@ -126,41 +122,13 @@ export class SendFromPrivkeyComponent implements OnInit {
   }
 
   private pushtx(hex) {
-    let url = this.proxyUrl(this.pushUrl);
-    return this.http.post(url, {hex}, null)
-      .catch(this.handleError);
-  }
-
-  private extractData(res: Response) {
-    try {
-      return res.json()['unspent_outputs'];
-    } catch(e) {
-      return [];
-    }
-  }
-
-  private handleError (error: Response | any) {
-    // In a real world app, we might use a remote logging infrastructure
-    let errMsg: string;
-    if (error instanceof Response) {
-      const body = error.json() || '';
-      const err = body.error || JSON.stringify(body);
-      errMsg = `${error.status} - ${error.statusText || ''} ${err}`;
-    } else {
-      errMsg = error.message ? error.message : error.toString();
-    }
-    return Observable.throw(errMsg);
+    let url = this.pushUrl;
+    return this.data.post(url, {hex}, {corsProxy: true});
   }
 
   getUnspents(address) {
-    let url = this.proxyUrl(this.unspentsUrlTpl + address)
-    return this.http.get(url)
-      .map(this.extractData)
-      .catch(this.handleError);
-  }
-
-  proxyUrl(url) {
-    return `${this.proxyEndpoint}${encodeURIComponent(url)}`;
+    let url = this.unspentsUrlTpl + address;
+    return this.data.get(url, {corsProxy: true});
   }
 
   ngOnInit() {
