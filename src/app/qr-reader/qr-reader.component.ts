@@ -15,9 +15,20 @@ export class QrReaderComponent implements OnInit {
   private video;
   private canvas;
   private context;
+  private items = [];
 
   constructor(private store: Store<any>,
               private el: ElementRef) { }
+
+  decodedSuccess(str) {
+    if (str !== this.items[0]) {
+      this.items.unshift(str);
+    }
+  }
+
+  clean() {
+    this.items = [];
+  }
 
   startJsqr() {
     const querySelector = sel => this.el.nativeElement.querySelector(sel);
@@ -66,7 +77,7 @@ export class QrReaderComponent implements OnInit {
       let imageData = this.context.getImageData(0, 0, width, height);
       let decoded = jsQR.decodeQRFromImage(imageData.data, imageData.width, imageData.height);
       if(decoded) {
-        alert(decoded);
+        this.decodedSuccess(decoded);
       }
     }
   }
