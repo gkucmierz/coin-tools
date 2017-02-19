@@ -1,5 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Directive, ElementRef, Input } from '@angular/core';
+import { Component, OnInit, OnDestroy, ElementRef } from '@angular/core';
 
 import { Store } from '@ngrx/store';
 import { SET_TITLE } from '../reducers/toolbarReducer';
