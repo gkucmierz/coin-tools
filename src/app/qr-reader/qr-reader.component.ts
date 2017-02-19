@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Directive, ElementRef, Input } from '@angular/core';
 
 import { Store } from '@ngrx/store';
@@ -11,11 +11,12 @@ const jsQR = require('jsqr');
   templateUrl: './qr-reader.component.html',
   styleUrls: ['./qr-reader.component.scss']
 })
-export class QrReaderComponent implements OnInit {
+export class QrReaderComponent implements OnInit, OnDestroy {
   private video;
   private canvas;
   private context;
   private items = [];
+  private stream;
 
   constructor(private store: Store<any>,
               private el: ElementRef) { }
@@ -24,6 +25,10 @@ export class QrReaderComponent implements OnInit {
     if (str !== this.items[0]) {
       this.items.unshift(str);
     }
+  }
+
+  stop() {
+    this.stream.getTracks().map(track => track.stop());
   }
 
   clean() {
@@ -42,7 +47,7 @@ export class QrReaderComponent implements OnInit {
     this.canvas.width = width;
     this.canvas.height = height;
 
-    let getUserMedia = navigator['getUserMedia'] ||
+    navigator['getUserMedia'] = navigator['getUserMedia'] ||
       navigator['webkitGetUserMedia'] ||
       navigator['mozGetUserMedia'];
     if (navigator.getUserMedia){
@@ -53,7 +58,9 @@ export class QrReaderComponent implements OnInit {
   }
 
   successCallback(stream) {
+    this.stream = stream;
     let URL = window['URL'] || window['webkitURL'];
+
     if (URL) {
       this.video.src = URL.createObjectURL(stream);
     } else if (this.video.mozSrcObject !== undefined) {
@@ -85,6 +92,10 @@ export class QrReaderComponent implements OnInit {
   ngOnInit() {
     this.startJsqr();
     this.store.dispatch({ type: SET_TITLE, payload: 'QR Reader' });
+  }
+
+  ngOnDestroy() {
+    this.stop();
   }
 }
 
