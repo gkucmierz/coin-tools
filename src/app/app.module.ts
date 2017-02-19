@@ -55,10 +55,6 @@ export function appReducer(state: any = INITIAL_APPLICATION_STATE, action: any) 
   }
 }
 
-const rootReducer = compose(storeLogger(), combineReducers)({
-  toolbar: toolbarReducer
-});
-
 const routeConfig:Routes = [
   {
     path: '',
