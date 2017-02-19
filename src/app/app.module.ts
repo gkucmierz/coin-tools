@@ -27,6 +27,7 @@ import { storeFreeze } from 'ngrx-store-freeze';
 
 // reducers
 import { toolbarReducer } from './reducers/toolbarReducer';
+import { qrReaderReducer } from './reducers/qrReaderReducer';
 
 // components
 import { HomeComponent } from './home/home.component';
@@ -41,7 +42,8 @@ import { QrReaderComponent } from './qr-reader/qr-reader.component';
 
 
 const reducers = {
-  toolbar: toolbarReducer
+  toolbar: toolbarReducer,
+  qrReader: qrReaderReducer
 };
 
 const developmentReducer: ActionReducer<any> = compose(storeFreeze, combineReducers)(reducers);
