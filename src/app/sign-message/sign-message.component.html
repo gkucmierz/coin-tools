@@ -2,7 +2,7 @@
 <md-card>
 
   <md-input-container class="full-width">
-    <textarea md-input
+    <textarea mdInput
               [(ngModel)]="msg"
               placeholder="message"
               (keyup)="keyup()"
@@ -10,7 +10,7 @@
   </md-input-container>
 
   <md-input-container class="full-width">
-    <input md-input
+    <input mdInput
            [(ngModel)]="privkey"
            placeholder="privkey"
            (keyup)="keyup()"
@@ -20,7 +20,7 @@
   <p>Signed Message</p>
 
   <md-input-container class="full-width">
-    <textarea md-input
+    <textarea mdInput
               [(ngModel)]="signedMsg"
               placeholder="signed message"
               rows="8"

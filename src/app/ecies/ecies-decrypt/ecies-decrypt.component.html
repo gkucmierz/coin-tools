@@ -1,6 +1,6 @@
 
 <md-input-container class="full-width">
-  <textarea md-input
+  <textarea mdInput
             [(ngModel)]="encryptedMsg"
             placeholder="Encrypted Message"
             (keyup)="update()"
@@ -9,7 +9,7 @@
 </md-input-container>
 
 <md-input-container class="full-width">
-  <input md-input
+  <input mdInput
          [(ngModel)]="recipientPriv"
          placeholder="Recipient Privkey"
          (keyup)="update()"
@@ -18,7 +18,7 @@
 </md-input-container>
 
 <md-input-container class="full-width">
-  <input md-input
+  <input mdInput
          [(ngModel)]="senderPub"
          placeholder="Sender Pubkey"
          (keyup)="update()"
@@ -30,7 +30,7 @@
 <p>Decrypted Message</p>
 
 <md-input-container class="full-width">
-  <textarea md-input
+  <textarea mdInput
             [(ngModel)]="msg"
             placeholder="Message"
             rows="8"
