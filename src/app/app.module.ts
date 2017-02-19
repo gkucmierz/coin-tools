@@ -8,6 +8,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { MaterialModule, MdButton } from '@angular/material';
 import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
 
+import { environment } from '../environments/environment';
+
 import { AppComponent } from './app.component';
 
 import 'hammerjs';
@@ -17,10 +19,11 @@ import { BitcoreService } from './services/bitcore.service';
 import { DataService } from './services/data.service';
 
 // Ngrx
-import { StoreModule } from '@ngrx/store';
-import { combineReducers } from '@ngrx/store';
+import { StoreModule, combineReducers } from '@ngrx/store';
+import { ActionReducer, Action } from '@ngrx/store';
 import { storeLogger } from 'ngrx-store-logger';
 import { compose } from '@ngrx/core/compose';
+import { storeFreeze } from 'ngrx-store-freeze';
 
 // reducers
 import { toolbarReducer } from './reducers/toolbarReducer';
@@ -34,6 +37,27 @@ import { EciesComponent } from './ecies/ecies.component';
 import { EciesEncryptComponent } from './ecies/ecies-encrypt/ecies-encrypt.component';
 import { EciesDecryptComponent } from './ecies/ecies-decrypt/ecies-decrypt.component';
 import { SendFromPrivkeyComponent } from './send-from-privkey/send-from-privkey.component';
+
+
+const reducers = {
+  toolbar: toolbarReducer
+};
+
+const developmentReducer: ActionReducer<any> = compose(storeFreeze, combineReducers)(reducers);
+const productionReducer: ActionReducer<any> = combineReducers(reducers);
+
+const INITIAL_APPLICATION_STATE = {};
+export function appReducer(state: any = INITIAL_APPLICATION_STATE, action: any) {
+  if (environment.production) {
+    return productionReducer(state, action);
+  } else {
+    return developmentReducer(state, action);
+  }
+}
+
+const rootReducer = compose(storeLogger(), combineReducers)({
+  toolbar: toolbarReducer
+});
 
 const routeConfig:Routes = [
   {
@@ -86,13 +110,7 @@ const routeConfig:Routes = [
     MaterialModule.forRoot(),
     SlimLoadingBarModule.forRoot(),
     RouterModule.forRoot(routeConfig),
-    StoreModule.provideStore(
-      compose(
-        storeLogger(),
-        combineReducers
-      )({
-        toolbar: toolbarReducer
-      }))
+    StoreModule.provideStore(appReducer)
   ],
   providers: [
     BitcoreService,
