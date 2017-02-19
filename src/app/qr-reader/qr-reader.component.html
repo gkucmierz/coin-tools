@@ -1,0 +1,18 @@
+
+<md-card>
+
+  <video appVideo autoplay="true" style="display:none;"></video>
+  <canvas id="canvas" style="width:640px; height:480px;"></canvas>
+
+  <md-grid-list cols="1" rowHeight="30px">
+    <md-grid-tile
+        *ngFor="let item of items; let i = index ">
+      {{item}}
+    </md-grid-tile>
+  </md-grid-list>
+
+  <div class="actions">
+    <button md-raised-button color="accent" (click)="clean()">Clean</button>
+  </div>
+
+</md-card>
