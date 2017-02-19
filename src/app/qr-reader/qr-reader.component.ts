@@ -17,6 +17,7 @@ export class QrReaderComponent implements OnInit, OnDestroy {
   private context;
   private items = [];
   private stream;
+  private stopped;
 
   constructor(private store: Store<any>,
               private el: ElementRef) { }
@@ -29,6 +30,7 @@ export class QrReaderComponent implements OnInit, OnDestroy {
 
   stop() {
     this.stream.getTracks().map(track => track.stop());
+    this.stopped = true;
   }
 
   clean() {
@@ -73,7 +75,9 @@ export class QrReaderComponent implements OnInit, OnDestroy {
   errorCallback() { }
 
   tick() {
-    requestAnimationFrame(this.tick.bind(this));
+    if (!this.stopped) {
+      requestAnimationFrame(this.tick.bind(this));
+    }
     let width = parseInt(this.canvas.style.width);
     let height = parseInt(this.canvas.style.height);
 
