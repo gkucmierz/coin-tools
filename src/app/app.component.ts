@@ -14,10 +14,6 @@ export class AppComponent implements OnInit {
 
   tools = [
     {
-      route: '',
-      name: 'Home'
-    },
-    {
       route: 'sign-message',
       name: 'Sign Message'
     },

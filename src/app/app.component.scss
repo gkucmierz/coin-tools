@@ -4,8 +4,7 @@ md-sidenav-container {
 }
 
 .app-sidenav {
-  padding: 10px;
-  min-width: 200px;
+  min-width: 250px;
 }
 
 .more {
@@ -14,4 +13,14 @@ md-sidenav-container {
 
 [routerLink] {
   cursor: pointer;
+}
+
+md-list-item {
+  cursor: pointer;
+}
+
+a:focus,
+a:active {
+  outline: 0;
+  border: none;
 }
