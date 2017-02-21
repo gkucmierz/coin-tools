@@ -1,4 +1,73 @@
 
 <md-card>
-  vanity-address works!
+
+  <md-input-container class="full-width">
+    <input mdInput
+           [(ngModel)]="startsWith"
+           placeholder="Starts With"
+           align="start"/>
+  </md-input-container>
+
+  <md-slide-toggle [(ngModel)]="ignoreCase">
+    Ignore Case
+  </md-slide-toggle>
+
+  <md-input-container class="full-width">
+    <input mdInput
+           [(ngModel)]="limit"
+           placeholder="Addresses Limit"
+           align="start"/>
+  </md-input-container>
+
+  <md-select placeholder="Number of Threads"
+             class="full-width"
+             [(ngModel)]="threads"
+             (change)="scale()"
+             name="threads">
+    <md-option *ngFor="let core of cores" [value]="core">
+      {{core}}
+    </md-option>
+  </md-select>
+
+  <md-card>
+    <table class="full-width">
+      <tr>
+        <td>Address</td>
+        <td>Privkey</td>
+      </tr>
+      <tr
+          *ngFor="let item of found">
+        <td>{{item.address}}</td>
+        <td>{{item.privkey}}</td>
+      </tr>
+    </table>
+
+    <div>
+      Checked Addresses: {{addressCnt}}
+    </div>
+  </md-card>
+
+  <div class="actions">
+    <button md-raised-button
+            color="accent"
+            (click)="clean()">
+      Clean
+    </button>
+
+    <button md-raised-button
+            *ngIf="workers.length === 0"
+            color="primary"
+            [disabled]="found.length >= limit"
+            (click)="generate()">
+      Start Generating
+    </button>
+
+    <button md-raised-button
+            *ngIf="workers.length !== 0"
+            color="primary"
+            (click)="terminateWorkers()">
+      Stop Generating
+    </button>
+  </div>
+
 </md-card>
