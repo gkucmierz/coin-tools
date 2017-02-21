@@ -1,6 +1,6 @@
 webpackJsonp([1,4],{
 
-/***/ 44:
+/***/ 33:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69,7 +69,7 @@ var qrReaderReducer = function (state, action) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__(130);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_throw__ = __webpack_require__(869);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_throw__ = __webpack_require__(872);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_throw___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_throw__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DataService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -206,8 +206,8 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dyna
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_store__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers_toolbarReducer__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_store__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers_toolbarReducer__ = __webpack_require__(33);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -244,6 +244,10 @@ var AppComponent = (function () {
             {
                 route: 'qr-reader',
                 name: 'QR Reader'
+            },
+            {
+                route: 'vanity-address',
+                name: 'Vanity Address'
             }
         ];
         this.store.dispatch({ type: __WEBPACK_IMPORTED_MODULE_2__reducers_toolbarReducer__["b" /* SET_TITLE */], payload: 'Coin Tools' });
@@ -257,8 +261,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
             selector: 'app-root',
-            template: __webpack_require__(852),
-            styles: [__webpack_require__(842)]
+            template: __webpack_require__(854),
+            styles: [__webpack_require__(843)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */]) === 'function' && _a) || Object])
     ], AppComponent);
@@ -275,23 +279,23 @@ var AppComponent = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(166);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(656);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_material__ = __webpack_require__(620);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ng2_slim_loading_bar__ = __webpack_require__(491);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__environments_environment__ = __webpack_require__(451);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(674);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_hammerjs__ = __webpack_require__(838);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_hammerjs__ = __webpack_require__(839);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_hammerjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_hammerjs__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_bitcore_service__ = __webpack_require__(94);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_data_service__ = __webpack_require__(450);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ngrx_store__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ngrx_store__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ngrx_core_compose__ = __webpack_require__(667);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ngrx_core_compose___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__ngrx_core_compose__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_ngrx_store_freeze__ = __webpack_require__(840);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_ngrx_store_freeze__ = __webpack_require__(841);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_ngrx_store_freeze___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_ngrx_store_freeze__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__reducers_toolbarReducer__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__reducers_toolbarReducer__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__reducers_qrReaderReducer__ = __webpack_require__(449);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__home_home_component__ = __webpack_require__(680);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__not_found_not_found_component__ = __webpack_require__(681);
@@ -302,6 +306,7 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ecies_ecies_decrypt_ecies_decrypt_component__ = __webpack_require__(677);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__send_from_privkey_send_from_privkey_component__ = __webpack_require__(683);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__qr_reader_qr_reader_component__ = __webpack_require__(682);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__vanity_address_vanity_address_component__ = __webpack_require__(685);
 /* unused harmony export appReducer */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -313,6 +318,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -386,6 +392,10 @@ var routeConfig = [
         component: __WEBPACK_IMPORTED_MODULE_25__qr_reader_qr_reader_component__["a" /* QrReaderComponent */]
     },
     {
+        path: 'vanity-address',
+        component: __WEBPACK_IMPORTED_MODULE_26__vanity_address_vanity_address_component__["a" /* VanityAddressComponent */]
+    },
+    {
         path: '**',
         component: __WEBPACK_IMPORTED_MODULE_18__not_found_not_found_component__["a" /* NotFoundComponent */]
     }
@@ -405,7 +415,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_22__ecies_ecies_encrypt_ecies_encrypt_component__["a" /* EciesEncryptComponent */],
                 __WEBPACK_IMPORTED_MODULE_23__ecies_ecies_decrypt_ecies_decrypt_component__["a" /* EciesDecryptComponent */],
                 __WEBPACK_IMPORTED_MODULE_24__send_from_privkey_send_from_privkey_component__["a" /* SendFromPrivkeyComponent */],
-                __WEBPACK_IMPORTED_MODULE_25__qr_reader_qr_reader_component__["a" /* QrReaderComponent */]
+                __WEBPACK_IMPORTED_MODULE_25__qr_reader_qr_reader_component__["a" /* QrReaderComponent */],
+                __WEBPACK_IMPORTED_MODULE_26__vanity_address_vanity_address_component__["a" /* VanityAddressComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -437,8 +448,8 @@ var AppModule = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngrx_store__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducers_toolbarReducer__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngrx_store__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducers_toolbarReducer__ = __webpack_require__(33);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckSignatureComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -483,8 +494,8 @@ var CheckSignatureComponent = (function () {
     CheckSignatureComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
             selector: 'app-check-signature',
-            template: __webpack_require__(853),
-            styles: [__webpack_require__(843)]
+            template: __webpack_require__(855),
+            styles: [__webpack_require__(844)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["c" /* Store */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["c" /* Store */]) === 'function' && _b) || Object])
     ], CheckSignatureComponent);
@@ -501,8 +512,8 @@ var CheckSignatureComponent = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngrx_store__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducers_toolbarReducer__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngrx_store__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducers_toolbarReducer__ = __webpack_require__(33);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EciesDecryptComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -560,8 +571,8 @@ var EciesDecryptComponent = (function () {
     EciesDecryptComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
             selector: 'app-ecies-decrypt',
-            template: __webpack_require__(854),
-            styles: [__webpack_require__(844)]
+            template: __webpack_require__(856),
+            styles: [__webpack_require__(845)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["c" /* Store */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["c" /* Store */]) === 'function' && _b) || Object])
     ], EciesDecryptComponent);
@@ -578,8 +589,8 @@ var EciesDecryptComponent = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngrx_store__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducers_toolbarReducer__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngrx_store__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducers_toolbarReducer__ = __webpack_require__(33);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EciesEncryptComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -634,8 +645,8 @@ var EciesEncryptComponent = (function () {
     EciesEncryptComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
             selector: 'app-ecies-encrypt',
-            template: __webpack_require__(855),
-            styles: [__webpack_require__(845)]
+            template: __webpack_require__(857),
+            styles: [__webpack_require__(846)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["c" /* Store */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["c" /* Store */]) === 'function' && _b) || Object])
     ], EciesEncryptComponent);
@@ -670,8 +681,8 @@ var EciesComponent = (function () {
     EciesComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
             selector: 'app-ecies',
-            template: __webpack_require__(856),
-            styles: [__webpack_require__(846)]
+            template: __webpack_require__(858),
+            styles: [__webpack_require__(847)]
         }), 
         __metadata('design:paramtypes', [])
     ], EciesComponent);
@@ -686,8 +697,8 @@ var EciesComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_store__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers_toolbarReducer__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_store__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers_toolbarReducer__ = __webpack_require__(33);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -711,8 +722,8 @@ var HomeComponent = (function () {
     HomeComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
             selector: 'app-home',
-            template: __webpack_require__(857),
-            styles: [__webpack_require__(849)]
+            template: __webpack_require__(859),
+            styles: [__webpack_require__(851)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */]) === 'function' && _a) || Object])
     ], HomeComponent);
@@ -728,8 +739,8 @@ var HomeComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_store__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers_toolbarReducer__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_store__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers_toolbarReducer__ = __webpack_require__(33);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NotFoundComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -753,8 +764,8 @@ var NotFoundComponent = (function () {
     NotFoundComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
             selector: 'app-not-found',
-            template: __webpack_require__(858),
-            styles: [__webpack_require__(850)]
+            template: __webpack_require__(860),
+            styles: [__webpack_require__(852)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */]) === 'function' && _a) || Object])
     ], NotFoundComponent);
@@ -770,8 +781,8 @@ var NotFoundComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_store__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers_toolbarReducer__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_store__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers_toolbarReducer__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducers_qrReaderReducer__ = __webpack_require__(449);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return QrReaderComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -787,7 +798,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var jsQR = __webpack_require__(839);
+var jsQR = __webpack_require__(840);
 var QrReaderComponent = (function () {
     function QrReaderComponent(store, el) {
         this.store = store;
@@ -870,8 +881,8 @@ var QrReaderComponent = (function () {
     QrReaderComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
             selector: 'app-qr-reader',
-            template: __webpack_require__(859),
-            styles: [__webpack_require__(847)]
+            template: __webpack_require__(861),
+            styles: [__webpack_require__(848)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* ElementRef */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* ElementRef */]) === 'function' && _b) || Object])
     ], QrReaderComponent);
@@ -889,8 +900,8 @@ var QrReaderComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__ = __webpack_require__(94);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_data_service__ = __webpack_require__(450);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngrx_store__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__reducers_toolbarReducer__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngrx_store__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__reducers_toolbarReducer__ = __webpack_require__(33);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SendFromPrivkeyComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1024,8 +1035,8 @@ var SendFromPrivkeyComponent = (function () {
     SendFromPrivkeyComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
             selector: 'app-send-from-privkey',
-            template: __webpack_require__(860),
-            styles: [__webpack_require__(848)]
+            template: __webpack_require__(862),
+            styles: [__webpack_require__(849)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_data_service__["a" /* DataService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_data_service__["a" /* DataService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ngrx_store__["c" /* Store */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__ngrx_store__["c" /* Store */]) === 'function' && _c) || Object])
     ], SendFromPrivkeyComponent);
@@ -1042,8 +1053,8 @@ var SendFromPrivkeyComponent = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngrx_store__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducers_toolbarReducer__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngrx_store__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducers_toolbarReducer__ = __webpack_require__(33);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignMessageComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1081,8 +1092,8 @@ var SignMessageComponent = (function () {
     SignMessageComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
             selector: 'app-sign-message',
-            template: __webpack_require__(861),
-            styles: [__webpack_require__(851)]
+            template: __webpack_require__(863),
+            styles: [__webpack_require__(853)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["c" /* Store */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["c" /* Store */]) === 'function' && _b) || Object])
     ], SignMessageComponent);
@@ -1093,24 +1104,115 @@ var SignMessageComponent = (function () {
 
 /***/ }),
 
-/***/ 842:
-/***/ (function(module, exports) {
+/***/ 685:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = "md-sidenav-container {\n  height: 100%; }\n\n.app-sidenav {\n  min-width: 250px; }\n\n.more {\n  visibility: hidden; }\n\n[routerLink] {\n  cursor: pointer; }\n\nmd-list-item {\n  cursor: pointer; }\n\na:focus,\na:active {\n  outline: 0;\n  border: none; }\n"
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_store__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers_toolbarReducer__ = __webpack_require__(33);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VanityAddressComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var VanityAddressComponent = (function () {
+    function VanityAddressComponent(store, appRef) {
+        this.store = store;
+        this.appRef = appRef;
+        this.startsWith = '1';
+        this.ignoreCase = false;
+        this.limit = 20;
+        this.found = [];
+        this.workers = [];
+        this.threads = 1;
+        this.addressCnt = 0;
+        this.cores = Array(navigator['hardwareConcurrency'] || 8).fill(0).map(function (a, i) { return i + 1; });
+    }
+    VanityAddressComponent.prototype.spawnWorker = function (startsWith, ignoreCase) {
+        var _this = this;
+        var worker = new Worker('/assets/vanity-address.worker.js');
+        worker.onmessage = function (msg) {
+            _this.workerMessage(JSON.parse(msg.data));
+        };
+        worker.postMessage(JSON.stringify({
+            startsWith: startsWith, ignoreCase: ignoreCase
+        }));
+        this.workers.push(worker);
+    };
+    VanityAddressComponent.prototype.workerMessage = function (res) {
+        if (res.found) {
+            this.found.push({
+                address: res.address,
+                privkey: res.privkey
+            });
+            if (this.found.length >= this.limit) {
+                this.terminateWorkers();
+            }
+        }
+        this.addressCnt += res.cnt;
+        this.appRef.tick();
+    };
+    VanityAddressComponent.prototype.scale = function (force) {
+        var start = force || this.workers.length > 0;
+        this.terminateWorkers();
+        if (start) {
+            while (this.workers.length < this.threads) {
+                this.spawnWorker(this.startsWith, this.ignoreCase);
+            }
+        }
+    };
+    VanityAddressComponent.prototype.terminateWorkers = function () {
+        this.workers.map(function (worker) { return worker.terminate(); });
+        this.workers = [];
+    };
+    VanityAddressComponent.prototype.generate = function () {
+        this.scale(true);
+    };
+    VanityAddressComponent.prototype.clean = function () {
+        this.found = [];
+        this.addressCnt = 0;
+    };
+    VanityAddressComponent.prototype.ngOnInit = function () {
+        this.store.dispatch({ type: __WEBPACK_IMPORTED_MODULE_2__reducers_toolbarReducer__["b" /* SET_TITLE */], payload: 'Vanity Address' });
+    };
+    VanityAddressComponent.prototype.ngOnDestroy = function () {
+        this.terminateWorkers();
+    };
+    VanityAddressComponent = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
+            selector: 'app-vanity-address',
+            template: __webpack_require__(864),
+            styles: [__webpack_require__(850)]
+        }), 
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* ApplicationRef */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* ApplicationRef */]) === 'function' && _b) || Object])
+    ], VanityAddressComponent);
+    return VanityAddressComponent;
+    var _a, _b;
+}());
+//# sourceMappingURL=/Users/gkucmierz/learn/coin-tools/src/vanity-address.component.js.map
 
 /***/ }),
 
 /***/ 843:
 /***/ (function(module, exports) {
 
-module.exports = ".full-width {\n  width: 100%; }\n\n.valid {\n  color: #090; }\n\n.not-valid {\n  color: #c00; }\n"
+module.exports = "md-sidenav-container {\n  height: 100%; }\n\n.app-sidenav {\n  min-width: 250px; }\n\n.more {\n  visibility: hidden; }\n\n[routerLink] {\n  cursor: pointer; }\n\nmd-list-item {\n  cursor: pointer; }\n\na:focus,\na:active {\n  outline: 0;\n  border: none; }\n"
 
 /***/ }),
 
 /***/ 844:
 /***/ (function(module, exports) {
 
-module.exports = ".full-width {\n  width: 100%; }\n\n.actions {\n  text-align: right; }\n"
+module.exports = ".full-width {\n  width: 100%; }\n\n.valid {\n  color: #090; }\n\n.not-valid {\n  color: #c00; }\n"
 
 /***/ }),
 
@@ -1124,116 +1226,137 @@ module.exports = ".full-width {\n  width: 100%; }\n\n.actions {\n  text-align: r
 /***/ 846:
 /***/ (function(module, exports) {
 
-module.exports = "nav {\n  width: calc(100% + 48px);\n  margin: -24px -24px 16px !important; }\n\n@media (max-width: 600px) {\n  nav {\n    width: calc(100% + 32px);\n    margin: 0 -16px !important;\n    margin-top: -24px !important; } }\n\n[md-tab-link] {\n  width: 50%; }\n"
+module.exports = ".full-width {\n  width: 100%; }\n\n.actions {\n  text-align: right; }\n"
 
 /***/ }),
 
 /***/ 847:
 /***/ (function(module, exports) {
 
-module.exports = ".actions {\n  text-align: right; }\n"
+module.exports = "nav {\n  width: calc(100% + 48px);\n  margin: -24px -24px 16px !important; }\n\n@media (max-width: 600px) {\n  nav {\n    width: calc(100% + 32px);\n    margin: 0 -16px !important;\n    margin-top: -24px !important; } }\n\n[md-tab-link] {\n  width: 50%; }\n"
 
 /***/ }),
 
 /***/ 848:
 /***/ (function(module, exports) {
 
-module.exports = ".full-width {\n  width: 100%; }\n\n.actions {\n  text-align: right; }\n\n.align-left {\n  text-align: left; }\n"
+module.exports = ".actions {\n  text-align: right; }\n"
 
 /***/ }),
 
 /***/ 849:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".full-width {\n  width: 100%; }\n\n.actions {\n  text-align: right; }\n\n.align-left {\n  text-align: left; }\n"
 
 /***/ }),
 
 /***/ 850:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".full-width {\n  width: 100%; }\n\n.actions {\n  text-align: right; }\n"
 
 /***/ }),
 
 /***/ 851:
 /***/ (function(module, exports) {
 
-module.exports = "\n.full-width {\n  width: 100%;\n}\n"
+module.exports = ""
 
 /***/ }),
 
 /***/ 852:
 /***/ (function(module, exports) {
 
-module.exports = "<ng2-slim-loading-bar></ng2-slim-loading-bar>\n\n<md-sidenav-container (swipeleft)=\"sidenav.close()\">\n\n  <md-sidenav #sidenav\n              [mode]=\"!pinnedMenu ? 'over':'side'\"\n              class=\"app-sidenav\"\n              align=\"start\">\n\n    <md-nav-list>\n      <a md-list-item\n         (click)=\"!pinnedMenu && sidenav.close()\"\n         routerLink=\"/\">\n        <h3>Coin Tools</h3>\n      </a>\n\n      <md-divider></md-divider>\n\n      <a md-list-item\n         *ngFor=\"let tool of tools\"\n         (click)=\"!pinnedMenu && sidenav.close()\"\n         routerLink=\"/{{tool.route}}\">\n        {{tool.name}}\n      </a>\n    </md-nav-list>\n\n    <md-card>\n      <md-slide-toggle [(ngModel)]=\"pinnedMenu\">\n        Pinned Menu\n      </md-slide-toggle>\n    </md-card>\n\n  </md-sidenav>\n\n  <md-toolbar color=\"primary\">\n    <button md-icon-button (click)=\"sidenav.toggle()\">\n      <md-icon>menu</md-icon>\n    </button>\n\n    <span>{{title}}</span>\n\n    <button md-icon-button\n            class=\"more\"\n            [md-menu-trigger-for]=\"menu\">\n      <md-icon>more_vert</md-icon>\n    </button>\n  </md-toolbar>\n\n  <md-menu x-position=\"before\" #menu=\"mdMenu\">\n    <button md-menu-item>Option 1</button>\n    <button md-menu-item>Option 2</button>\n  </md-menu>\n\n  <router-outlet></router-outlet>\n\n</md-sidenav-container>\n"
+module.exports = ""
 
 /***/ }),
 
 /***/ 853:
 /***/ (function(module, exports) {
 
-module.exports = "\n<md-card>\n\n  <md-input-container class=\"full-width\">\n    <textarea mdInput\n              [(ngModel)]=\"signedMsg\"\n              placeholder=\"signed message\"\n              (keyup)=\"change()\"\n              (change)=\"change()\"\n              rows=\"12\"></textarea>\n  </md-input-container>\n\n  <div *ngIf=\"valid\">\n    <md-icon class=\"valid\">done</md-icon>\n    <span>Message is correctly signed</span>\n  </div>\n\n  <div *ngIf=\"!valid\">\n    <md-icon class=\"not-valid\">error_outline</md-icon>\n    <span>Signature is not valid</span>\n  </div>\n\n</md-card>\n"
+module.exports = "\n.full-width {\n  width: 100%;\n}\n"
 
 /***/ }),
 
 /***/ 854:
 /***/ (function(module, exports) {
 
-module.exports = "\n<md-input-container class=\"full-width\">\n  <textarea mdInput\n            [(ngModel)]=\"encryptedMsg\"\n            placeholder=\"Encrypted Message\"\n            (keyup)=\"update()\"\n            (change)=\"update()\"\n            rows=\"5\"></textarea>\n</md-input-container>\n\n<md-input-container class=\"full-width\">\n  <input mdInput\n         [(ngModel)]=\"recipientPriv\"\n         placeholder=\"Recipient Privkey\"\n         (keyup)=\"update()\"\n         (change)=\"update()\"\n         align=\"start\"/>\n</md-input-container>\n\n<md-input-container class=\"full-width\">\n  <input mdInput\n         [(ngModel)]=\"senderPub\"\n         placeholder=\"Sender Pubkey\"\n         (keyup)=\"update()\"\n         (change)=\"update()\"\n         align=\"start\"/>\n</md-input-container>\n\n\n<p>Decrypted Message</p>\n\n<md-input-container class=\"full-width\">\n  <textarea mdInput\n            [(ngModel)]=\"msg\"\n            placeholder=\"Message\"\n            rows=\"8\"\n            readonly></textarea>\n</md-input-container>\n\n\n<div class=\"actions\">\n  <button md-raised-button color=\"accent\" (click)=\"reset()\">Clean</button>\n</div>\n"
+module.exports = "<ng2-slim-loading-bar></ng2-slim-loading-bar>\n\n<md-sidenav-container (swipeleft)=\"sidenav.close()\">\n\n  <md-sidenav #sidenav\n              [mode]=\"!pinnedMenu ? 'over':'side'\"\n              class=\"app-sidenav\"\n              align=\"start\">\n\n    <md-nav-list>\n      <a md-list-item\n         (click)=\"!pinnedMenu && sidenav.close()\"\n         routerLink=\"/\">\n        <h3>Coin Tools</h3>\n      </a>\n\n      <md-divider></md-divider>\n\n      <a md-list-item\n         *ngFor=\"let tool of tools\"\n         (click)=\"!pinnedMenu && sidenav.close()\"\n         routerLink=\"/{{tool.route}}\">\n        {{tool.name}}\n      </a>\n    </md-nav-list>\n\n    <md-card>\n      <md-slide-toggle [(ngModel)]=\"pinnedMenu\">\n        Pinned Menu\n      </md-slide-toggle>\n    </md-card>\n\n  </md-sidenav>\n\n  <md-toolbar color=\"primary\">\n    <button md-icon-button (click)=\"sidenav.toggle()\">\n      <md-icon>menu</md-icon>\n    </button>\n\n    <span>{{title}}</span>\n\n    <button md-icon-button\n            class=\"more\"\n            [md-menu-trigger-for]=\"menu\">\n      <md-icon>more_vert</md-icon>\n    </button>\n  </md-toolbar>\n\n  <md-menu x-position=\"before\" #menu=\"mdMenu\">\n    <button md-menu-item>Option 1</button>\n    <button md-menu-item>Option 2</button>\n  </md-menu>\n\n  <router-outlet></router-outlet>\n\n</md-sidenav-container>\n"
 
 /***/ }),
 
 /***/ 855:
 /***/ (function(module, exports) {
 
-module.exports = "\n<md-input-container class=\"full-width\">\n  <textarea mdInput\n            [(ngModel)]=\"msg\"\n            placeholder=\"message\"\n            (keyup)=\"update()\"\n            (change)=\"update()\"\n            rows=\"5\"></textarea>\n</md-input-container>\n\n<md-input-container class=\"full-width\">\n  <input mdInput\n         [(ngModel)]=\"senderPriv\"\n         placeholder=\"Sender Privkey\"\n         (keyup)=\"update()\"\n         (change)=\"update()\"\n         align=\"start\"/>\n</md-input-container>\n\n<md-input-container class=\"full-width\">\n  <input mdInput\n         [(ngModel)]=\"recipientPubkey\"\n         placeholder=\"Recipient Pubkey\"\n         (keyup)=\"update()\"\n         (change)=\"update()\"\n         align=\"start\"/>\n</md-input-container>\n\n\n<p>Encrypted Message</p>\n\n<md-input-container class=\"full-width\">\n  <textarea mdInput\n            [(ngModel)]=\"encryptedMsg\"\n            placeholder=\"Encrypted Message\"\n            rows=\"8\"\n            readonly></textarea>\n</md-input-container>\n\n\n<div class=\"actions\">\n  <button md-raised-button color=\"accent\" (click)=\"reset()\">Clean</button>\n</div>\n"
+module.exports = "\n<md-card>\n\n  <md-input-container class=\"full-width\">\n    <textarea mdInput\n              [(ngModel)]=\"signedMsg\"\n              placeholder=\"signed message\"\n              (keyup)=\"change()\"\n              (change)=\"change()\"\n              rows=\"12\"></textarea>\n  </md-input-container>\n\n  <div *ngIf=\"valid\">\n    <md-icon class=\"valid\">done</md-icon>\n    <span>Message is correctly signed</span>\n  </div>\n\n  <div *ngIf=\"!valid\">\n    <md-icon class=\"not-valid\">error_outline</md-icon>\n    <span>Signature is not valid</span>\n  </div>\n\n</md-card>\n"
 
 /***/ }),
 
 /***/ 856:
 /***/ (function(module, exports) {
 
-module.exports = "\n<md-card>\n\n  <nav md-tab-nav-bar>\n    <a md-tab-link\n       [routerLink]=\"['encrypt']\"\n       routerLinkActive #encrypt=\"routerLinkActive\"\n       [active]=\"encrypt.isActive\">\n      Encrypt\n    </a>\n    <a md-tab-link\n       [routerLink]=\"['decrypt']\"\n       routerLinkActive #decrypt=\"routerLinkActive\"\n       [active]=\"decrypt.isActive\">\n      Decrypt\n    </a>\n  </nav>\n\n  <md-card-content>\n    <router-outlet></router-outlet>\n  </md-card-content>\n\n</md-card>\n\n"
+module.exports = "\n<md-input-container class=\"full-width\">\n  <textarea mdInput\n            [(ngModel)]=\"encryptedMsg\"\n            placeholder=\"Encrypted Message\"\n            (keyup)=\"update()\"\n            (change)=\"update()\"\n            rows=\"5\"></textarea>\n</md-input-container>\n\n<md-input-container class=\"full-width\">\n  <input mdInput\n         [(ngModel)]=\"recipientPriv\"\n         placeholder=\"Recipient Privkey\"\n         (keyup)=\"update()\"\n         (change)=\"update()\"\n         align=\"start\"/>\n</md-input-container>\n\n<md-input-container class=\"full-width\">\n  <input mdInput\n         [(ngModel)]=\"senderPub\"\n         placeholder=\"Sender Pubkey\"\n         (keyup)=\"update()\"\n         (change)=\"update()\"\n         align=\"start\"/>\n</md-input-container>\n\n\n<p>Decrypted Message</p>\n\n<md-input-container class=\"full-width\">\n  <textarea mdInput\n            [(ngModel)]=\"msg\"\n            placeholder=\"Message\"\n            rows=\"8\"\n            readonly></textarea>\n</md-input-container>\n\n\n<div class=\"actions\">\n  <button md-raised-button color=\"accent\" (click)=\"reset()\">Clean</button>\n</div>\n"
 
 /***/ }),
 
 /***/ 857:
 /***/ (function(module, exports) {
 
-module.exports = "\n<md-card>\n  <h1>Bitcoin tools</h1>\n</md-card>\n"
+module.exports = "\n<md-input-container class=\"full-width\">\n  <textarea mdInput\n            [(ngModel)]=\"msg\"\n            placeholder=\"message\"\n            (keyup)=\"update()\"\n            (change)=\"update()\"\n            rows=\"5\"></textarea>\n</md-input-container>\n\n<md-input-container class=\"full-width\">\n  <input mdInput\n         [(ngModel)]=\"senderPriv\"\n         placeholder=\"Sender Privkey\"\n         (keyup)=\"update()\"\n         (change)=\"update()\"\n         align=\"start\"/>\n</md-input-container>\n\n<md-input-container class=\"full-width\">\n  <input mdInput\n         [(ngModel)]=\"recipientPubkey\"\n         placeholder=\"Recipient Pubkey\"\n         (keyup)=\"update()\"\n         (change)=\"update()\"\n         align=\"start\"/>\n</md-input-container>\n\n\n<p>Encrypted Message</p>\n\n<md-input-container class=\"full-width\">\n  <textarea mdInput\n            [(ngModel)]=\"encryptedMsg\"\n            placeholder=\"Encrypted Message\"\n            rows=\"8\"\n            readonly></textarea>\n</md-input-container>\n\n\n<div class=\"actions\">\n  <button md-raised-button color=\"accent\" (click)=\"reset()\">Clean</button>\n</div>\n"
 
 /***/ }),
 
 /***/ 858:
 /***/ (function(module, exports) {
 
-module.exports = "<md-card>\n  <h1>404 - page not found</h1>\n</md-card>\n"
+module.exports = "\n<md-card>\n\n  <nav md-tab-nav-bar>\n    <a md-tab-link\n       [routerLink]=\"['encrypt']\"\n       routerLinkActive #encrypt=\"routerLinkActive\"\n       [active]=\"encrypt.isActive\">\n      Encrypt\n    </a>\n    <a md-tab-link\n       [routerLink]=\"['decrypt']\"\n       routerLinkActive #decrypt=\"routerLinkActive\"\n       [active]=\"decrypt.isActive\">\n      Decrypt\n    </a>\n  </nav>\n\n  <md-card-content>\n    <router-outlet></router-outlet>\n  </md-card-content>\n\n</md-card>\n\n"
 
 /***/ }),
 
 /***/ 859:
 /***/ (function(module, exports) {
 
-module.exports = "\n<md-card>\n\n  <video appVideo autoplay=\"true\" style=\"display:none;\"></video>\n  <canvas id=\"canvas\" style=\"width:640px; height:480px;\"></canvas>\n\n  <md-grid-list cols=\"1\" rowHeight=\"30px\">\n    <md-grid-tile\n        *ngFor=\"let item of items; let i = index \">\n      {{item}}\n    </md-grid-tile>\n  </md-grid-list>\n\n  <div class=\"actions\">\n    <!-- <button md-raised-button color=\"warn\" (click)=\"stop()\">Stop</button> -->\n    <button md-raised-button color=\"accent\" (click)=\"clean()\">Clean</button>\n  </div>\n\n</md-card>\n"
+module.exports = "\n<md-card>\n  <h1>Bitcoin tools</h1>\n</md-card>\n"
 
 /***/ }),
 
 /***/ 860:
 /***/ (function(module, exports) {
 
-module.exports = "\n<md-card>\n\n  <md-input-container class=\"full-width\">\n    <input mdInput\n           [(ngModel)]=\"privkey\"\n           placeholder=\"Privkey\"\n           (change)=\"privkeyUpdate()\"\n           (keyup)=\"privkeyUpdate()\"\n           align=\"start\"/>\n  </md-input-container>\n\n  <md-card class=\"align-left\" *ngIf=\"srcAddr\">\n    <md-card-content>\n      <div>Related Address: {{srcAddr}}</div>\n      <div *ngIf=\"unspents\">Unspent Outputs: {{unspents.length}}</div>\n      <div *ngIf=\"unspents\">Unspent Value: {{sumValue(unspents)}}</div>\n    </md-card-content>\n  </md-card>\n\n  <md-input-container class=\"full-width\">\n    <input mdInput\n           [(ngModel)]=\"address\"\n           placeholder=\"Destination Address\"\n           (change)=\"updateSummary()\"\n           (keyup)=\"updateSummary()\"\n           align=\"start\"/>\n  </md-input-container>\n\n  <md-input-container class=\"full-width\">\n    <input mdInput\n           type=\"number\"\n           min=\"0\"\n           step=\"0.0001\"\n           max=\"0.005\"\n           [(ngModel)]=\"networkFee\"\n           placeholder=\"Network Fee\"\n           (change)=\"updateSummary()\"\n           (keyup)=\"updateSummary()\"\n           align=\"start\"/>\n  </md-input-container>\n\n  <md-slide-toggle [(ngModel)]=\"doServiceFee\"\n                   (change)=\"updateSummary()\"\n                   mdTooltip=\"If you like this tool, please pay a little fee within this transaction, because it will help developing and maintaing this and other tools.\">\n    Pay Service Fee\n  </md-slide-toggle>\n\n  <md-card *ngIf=\"receiveAmount && !txHash\">\n    <md-card-title>Transaction Summary</md-card-title>\n    <md-card-content>\n      {{receiveAmount}} BTC => {{address}}\n    </md-card-content>\n  </md-card>\n\n  <md-card *ngIf=\"txHash\">\n    <md-card-title>Transaction Sent</md-card-title>\n    <md-card-content>\n      <a href=\"https://blockchain.info/pl/tx/{{txHash}}\" target=\"_blank\">\n        https://blockchain.info/pl/tx/{{txHash}}\n      </a>\n    </md-card-content>\n    <md-card-footer>\n      <button md-raised-button\n              color=\"accent\"\n              (click)=\"txHash = ''\">\n        OK\n      </button>\n    </md-card-footer>\n  </md-card>\n\n  <div class=\"actions\">\n    <button md-raised-button\n            color=\"accent\"\n            (click)=\"clean()\">\n      Clean\n    </button>\n\n    <button md-raised-button\n            color=\"primary\"\n            (click)=\"send()\"\n            [disabled]=\"!receiveAmount || txHash\">\n      Send Transaction\n    </button>\n  </div>\n\n</md-card>\n"
+module.exports = "<md-card>\n  <h1>404 - page not found</h1>\n</md-card>\n"
 
 /***/ }),
 
 /***/ 861:
 /***/ (function(module, exports) {
 
+module.exports = "\n<md-card>\n\n  <video appVideo autoplay=\"true\" style=\"display:none;\"></video>\n  <canvas id=\"canvas\" style=\"width:640px; height:480px;\"></canvas>\n\n  <md-grid-list cols=\"1\" rowHeight=\"30px\">\n    <md-grid-tile\n        *ngFor=\"let item of items; let i = index \">\n      {{item}}\n    </md-grid-tile>\n  </md-grid-list>\n\n  <div class=\"actions\">\n    <!-- <button md-raised-button color=\"warn\" (click)=\"stop()\">Stop</button> -->\n    <button md-raised-button color=\"accent\" (click)=\"clean()\">Clean</button>\n  </div>\n\n</md-card>\n"
+
+/***/ }),
+
+/***/ 862:
+/***/ (function(module, exports) {
+
+module.exports = "\n<md-card>\n\n  <md-input-container class=\"full-width\">\n    <input mdInput\n           [(ngModel)]=\"privkey\"\n           placeholder=\"Privkey\"\n           (change)=\"privkeyUpdate()\"\n           (keyup)=\"privkeyUpdate()\"\n           align=\"start\"/>\n  </md-input-container>\n\n  <md-card class=\"align-left\" *ngIf=\"srcAddr\">\n    <md-card-content>\n      <div>Related Address: {{srcAddr}}</div>\n      <div *ngIf=\"unspents\">Unspent Outputs: {{unspents.length}}</div>\n      <div *ngIf=\"unspents\">Unspent Value: {{sumValue(unspents)}}</div>\n    </md-card-content>\n  </md-card>\n\n  <md-input-container class=\"full-width\">\n    <input mdInput\n           [(ngModel)]=\"address\"\n           placeholder=\"Destination Address\"\n           (change)=\"updateSummary()\"\n           (keyup)=\"updateSummary()\"\n           align=\"start\"/>\n  </md-input-container>\n\n  <md-input-container class=\"full-width\">\n    <input mdInput\n           type=\"number\"\n           min=\"0\"\n           step=\"0.0001\"\n           max=\"0.005\"\n           [(ngModel)]=\"networkFee\"\n           placeholder=\"Network Fee\"\n           (change)=\"updateSummary()\"\n           (keyup)=\"updateSummary()\"\n           align=\"start\"/>\n  </md-input-container>\n\n  <md-slide-toggle [(ngModel)]=\"doServiceFee\"\n                   (change)=\"updateSummary()\"\n                   mdTooltip=\"If you like this tool, please pay a little fee within this transaction, because it will help developing and maintaing this and other tools.\">\n    Pay Service Fee\n  </md-slide-toggle>\n\n  <md-card *ngIf=\"receiveAmount && !txHash\">\n    <md-card-title>Transaction Summary</md-card-title>\n    <md-card-content>\n      {{receiveAmount}} BTC => {{address}}\n    </md-card-content>\n  </md-card>\n\n  <md-card *ngIf=\"txHash\">\n    <md-card-title>Transaction Sent</md-card-title>\n    <md-card-content>\n      <a href=\"https://blockchain.info/pl/tx/{{txHash}}\" target=\"_blank\">\n        https://blockchain.info/pl/tx/{{txHash}}\n      </a>\n    </md-card-content>\n    <md-card-footer>\n      <button md-raised-button\n              color=\"accent\"\n              (click)=\"txHash = ''\">\n        OK\n      </button>\n    </md-card-footer>\n  </md-card>\n\n  <div class=\"actions\">\n    <button md-raised-button\n            color=\"accent\"\n            (click)=\"clean()\">\n      Clean\n    </button>\n\n    <button md-raised-button\n            color=\"primary\"\n            (click)=\"send()\"\n            [disabled]=\"!receiveAmount || txHash\">\n      Send Transaction\n    </button>\n  </div>\n\n</md-card>\n"
+
+/***/ }),
+
+/***/ 863:
+/***/ (function(module, exports) {
+
 module.exports = "\n<md-card>\n\n  <md-input-container class=\"full-width\">\n    <textarea mdInput\n              [(ngModel)]=\"msg\"\n              placeholder=\"message\"\n              (keyup)=\"keyup()\"\n              rows=\"5\"></textarea>\n  </md-input-container>\n\n  <md-input-container class=\"full-width\">\n    <input mdInput\n           [(ngModel)]=\"privkey\"\n           placeholder=\"privkey\"\n           (keyup)=\"keyup()\"\n           align=\"start\"/>\n  </md-input-container>\n\n  <p>Signed Message</p>\n\n  <md-input-container class=\"full-width\">\n    <textarea mdInput\n              [(ngModel)]=\"signedMsg\"\n              placeholder=\"signed message\"\n              rows=\"8\"\n              readonly></textarea>\n  </md-input-container>\n\n</md-card>\n"
 
 /***/ }),
 
-/***/ 912:
+/***/ 864:
+/***/ (function(module, exports) {
+
+module.exports = "\n<md-card>\n\n  <md-input-container class=\"full-width\">\n    <input mdInput\n           [(ngModel)]=\"startsWith\"\n           placeholder=\"Starts With\"\n           align=\"start\"/>\n  </md-input-container>\n\n  <md-slide-toggle [(ngModel)]=\"ignoreCase\">\n    Ignore Case\n  </md-slide-toggle>\n\n  <md-input-container class=\"full-width\">\n    <input mdInput\n           [(ngModel)]=\"limit\"\n           placeholder=\"Addresses Limit\"\n           align=\"start\"/>\n  </md-input-container>\n\n  <md-select placeholder=\"Number of Threads\"\n             class=\"full-width\"\n             [(ngModel)]=\"threads\"\n             (change)=\"scale()\"\n             name=\"threads\">\n    <md-option *ngFor=\"let core of cores\" [value]=\"core\">\n      {{core}}\n    </md-option>\n  </md-select>\n\n  <md-card>\n    <table class=\"full-width\">\n      <tr>\n        <td>Address</td>\n        <td>Privkey</td>\n      </tr>\n      <tr\n          *ngFor=\"let item of found\">\n        <td>{{item.address}}</td>\n        <td>{{item.privkey}}</td>\n      </tr>\n    </table>\n\n    <div>\n      Checked Addresses: {{addressCnt}}\n    </div>\n  </md-card>\n\n  <div class=\"actions\">\n    <button md-raised-button\n            color=\"accent\"\n            (click)=\"clean()\">\n      Clean\n    </button>\n\n    <button md-raised-button\n            *ngIf=\"workers.length === 0\"\n            color=\"primary\"\n            [disabled]=\"found.length >= limit\"\n            (click)=\"generate()\">\n      Start Generating\n    </button>\n\n    <button md-raised-button\n            *ngIf=\"workers.length !== 0\"\n            color=\"primary\"\n            (click)=\"terminateWorkers()\">\n      Stop Generating\n    </button>\n  </div>\n\n</md-card>\n"
+
+/***/ }),
+
+/***/ 915:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(510);
@@ -1273,5 +1396,5 @@ var BitcoreService = (function () {
 
 /***/ })
 
-},[912]);
+},[915]);
 //# sourceMappingURL=main.bundle.map
