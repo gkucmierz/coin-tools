@@ -12,7 +12,12 @@ window.parseInt = parseInt;
 window.parseFloat = parseFloat;
 window.crypto = crypto;
 
-importScripts('/assets/bitcore-lib.min.js');
+try {
+  importScripts('/assets/bitcore-lib.min.js');
+} catch(e) {
+  importScripts('/coin-tools/assets/bitcore-lib.min.js');
+}
+
 
 const {PrivateKey} = require('bitcore-lib');
 
