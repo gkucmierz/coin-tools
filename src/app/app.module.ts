@@ -39,6 +39,7 @@ import { EciesEncryptComponent } from './ecies/ecies-encrypt/ecies-encrypt.compo
 import { EciesDecryptComponent } from './ecies/ecies-decrypt/ecies-decrypt.component';
 import { SendFromPrivkeyComponent } from './send-from-privkey/send-from-privkey.component';
 import { QrReaderComponent } from './qr-reader/qr-reader.component';
+import { VanityAddressComponent } from './vanity-address/vanity-address.component';
 
 
 const reducers = {
@@ -89,6 +90,10 @@ const routeConfig:Routes = [
     component: QrReaderComponent
   },
   {
+    path: 'vanity-address',
+    component: VanityAddressComponent
+  },
+  {
     path: '**',
     component: NotFoundComponent
   }
@@ -105,7 +110,8 @@ const routeConfig:Routes = [
     EciesEncryptComponent,
     EciesDecryptComponent,
     SendFromPrivkeyComponent,
-    QrReaderComponent
+    QrReaderComponent,
+    VanityAddressComponent
   ],
   imports: [
     BrowserModule,

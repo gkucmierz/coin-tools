@@ -32,6 +32,10 @@ export class AppComponent implements OnInit {
     {
       route: 'qr-reader',
       name: 'QR Reader'
+    },
+    {
+      route: 'vanity-address',
+      name: 'Vanity Address'
     }
   ];
 
