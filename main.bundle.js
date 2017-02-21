@@ -1139,7 +1139,8 @@ var VanityAddressComponent = (function () {
     }
     VanityAddressComponent.prototype.spawnWorker = function (startsWith, ignoreCase) {
         var _this = this;
-        var worker = new Worker('/assets/vanity-address.worker.js');
+        var base = document.querySelector('base').href;
+        var worker = new Worker(base + 'assets/vanity-address.worker.js');
         worker.onmessage = function (msg) {
             _this.workerMessage(JSON.parse(msg.data));
         };
