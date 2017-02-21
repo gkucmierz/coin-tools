@@ -24,7 +24,8 @@ export class VanityAddressComponent implements OnInit, OnDestroy {
   }
 
   spawnWorker(startsWith, ignoreCase) {
-    let worker = new Worker('/assets/vanity-address.worker.js');
+    let base = document.querySelector('base').href;
+    let worker = new Worker(base + 'assets/vanity-address.worker.js');
 
     worker.onmessage = msg => {
       this.workerMessage(JSON.parse(msg.data));
