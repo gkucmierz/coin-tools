@@ -4,7 +4,6 @@
 [![Join the chat at https://gitter.im/angular/angular-cli](https://badges.gitter.im/gkucmierz/coin-tools.svg)](https://gitter.im/Coin-Tools/Lobby)
 [![dependencies Status](https://david-dm.org/gkucmierz/coin-tools/status.svg)](https://david-dm.org/gkucmierz/coin-tools)
 [![devDependencies Status](https://david-dm.org/gkucmierz/coin-tools/dev-status.svg)](https://david-dm.org/gkucmierz/coin-tools?type=dev)
-[![Known Vulnerabilities](https://snyk.io/test/github/gkucmierz/coin-tools/badge.svg)](https://snyk.io/test/github/gkucmierz/coin-tools)
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.30.
 
