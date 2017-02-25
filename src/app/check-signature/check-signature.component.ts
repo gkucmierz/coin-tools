@@ -3,6 +3,7 @@ import { BitcoreService } from '../services/bitcore.service';
 
 import { Store } from '@ngrx/store';
 import { SET_TITLE } from '../reducers/toolbarReducer';
+import { SET_SIGNED_MSG } from '../reducers/checkSignatureReducer';
 
 @Component({
   selector: 'app-check-signature',
@@ -10,18 +11,17 @@ import { SET_TITLE } from '../reducers/toolbarReducer';
   styleUrls: ['./check-signature.component.scss']
 })
 export class CheckSignatureComponent implements OnInit {
-  public signedMsg = `-----BEGIN BITCOIN SIGNED MESSAGE-----
-Signature test
------BEGIN SIGNATURE-----
-1AStMhq3k957K3dVtGv5WPVXbUWdHacX7k
-IPPSaoJkUyCpAVFLctuyDd2VF+0rfOCuoteOMF6xQtrBV5zJTXYqNt9/cSYahIGntL5ibZgS+tp6Jp/QUMxlrIA=
------END BITCOIN SIGNED MESSAGE-----`;
+  public signedMsg = '';
   public valid = true;
 
   constructor(private bitcore: BitcoreService,
               private store: Store<any>) { }
 
   change() {
+    this.store.dispatch({ type: SET_SIGNED_MSG, payload: this.signedMsg });
+  }
+
+  updateStatus() {
     const Message = this.bitcore.message;
     let parts = (this.signedMsg+'').split(/\-{5}[\w\s]+\-{5}/i);
     if (parts.length === 4) {
@@ -39,6 +39,11 @@ IPPSaoJkUyCpAVFLctuyDd2VF+0rfOCuoteOMF6xQtrBV5zJTXYqNt9/cSYahIGntL5ibZgS+tp6Jp/Q
 
   ngOnInit() {
     this.store.dispatch({ type: SET_TITLE, payload: 'Check Signature' });
+
+    this.store.select('checkSignature').subscribe(store => {
+      this.signedMsg = store['signedMsg'];
+      this.updateStatus();
+    });
   }
 
 }
