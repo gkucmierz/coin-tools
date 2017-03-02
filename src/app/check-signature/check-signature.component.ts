@@ -3,7 +3,7 @@ import { BitcoreService } from '../services/bitcore.service';
 
 import { Store } from '@ngrx/store';
 import { SET_TITLE } from '../reducers/toolbarReducer';
-import { SET_SIGNED_MSG } from '../reducers/checkSignatureReducer';
+import { CHECK_SIGNATURE_SET_SIGNED_MSG } from '../reducers/checkSignatureReducer';
 
 @Component({
   selector: 'app-check-signature',

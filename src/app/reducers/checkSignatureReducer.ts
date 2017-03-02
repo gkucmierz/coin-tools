@@ -1,7 +1,7 @@
 
 import { ActionReducer, Action } from '@ngrx/store';
 
-export const SET_SIGNED_MSG = 'SET_SIGNED_MSG';
+export const CHECK_SIGNATURE_SET_SIGNED_MSG = 'SET_SIGNED_MSG';
 
 const INITIAL_STATE = {
   signedMsg: ''
