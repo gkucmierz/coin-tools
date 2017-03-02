@@ -1,7 +1,7 @@
 
 import { ActionReducer, Action } from '@ngrx/store';
 
-export const CHECK_SIGNATURE_SET_SIGNED_MSG = 'SET_SIGNED_MSG';
+export const CHECK_SIGNATURE_SET_SIGNED_MSG = 'CHECK_SIGNATURE_SET_SIGNED_MSG';
 
 const INITIAL_STATE = {
   signedMsg: ''
@@ -9,7 +9,7 @@ const INITIAL_STATE = {
 
 export const checkSignatureReducer = (state = INITIAL_STATE, action: Action) => {
   switch (action.type) {
-    case (SET_SIGNED_MSG):
+    case (CHECK_SIGNATURE_SET_SIGNED_MSG):
       return Object.assign({},
         state,
         {

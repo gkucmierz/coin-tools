@@ -18,7 +18,7 @@ export class CheckSignatureComponent implements OnInit {
               private store: Store<any>) { }
 
   change() {
-    this.store.dispatch({ type: SET_SIGNED_MSG, payload: this.signedMsg });
+    this.store.dispatch({ type: CHECK_SIGNATURE_SET_SIGNED_MSG, payload: this.signedMsg });
   }
 
   updateStatus() {
