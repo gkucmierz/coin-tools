@@ -2,7 +2,9 @@ import { Component, OnInit, OnDestroy, ElementRef } from '@angular/core';
 
 import { Store } from '@ngrx/store';
 import { SET_TITLE } from '../reducers/toolbarReducer';
-import { ADD_ITEM, CLEAN } from '../reducers/qrReaderReducer';
+import { QR_READER_ADD_ITEM } from '../reducers/qrReaderReducer';
+import { QR_READER_CLEAN } from '../reducers/qrReaderReducer';
+
 
 const jsQR = require('jsqr');
 
@@ -25,8 +27,7 @@ export class QrReaderComponent implements OnInit, OnDestroy {
 
   decodedSuccess(str) {
     if (str !== this.items[0]) {
-      console.log('dispatch');
-      this.store.dispatch({ type: ADD_ITEM, payload: str });
+      this.store.dispatch({ type: QR_READER_ADD_ITEM, payload: str });
     }
   }
 
@@ -36,7 +37,7 @@ export class QrReaderComponent implements OnInit, OnDestroy {
   }
 
   clean() {
-    this.store.dispatch({ type: CLEAN });
+    this.store.dispatch({ type: QR_READER_CLEAN });
   }
 
   startJsqr() {

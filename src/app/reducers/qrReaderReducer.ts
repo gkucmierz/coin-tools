@@ -1,8 +1,8 @@
 
 import { ActionReducer, Action } from '@ngrx/store';
 
-export const ADD_ITEM = 'ADD_ITEM';
-export const CLEAN = 'CLEAN';
+export const QR_READER_ADD_ITEM = 'QR_READER_ADD_ITEM';
+export const QR_READER_CLEAN = 'QR_READER_CLEAN';
 
 const INITIAL_STATE = {
   items: []
@@ -10,19 +10,17 @@ const INITIAL_STATE = {
 
 export const qrReaderReducer = (state = INITIAL_STATE, action: Action) => {
   switch (action.type) {
-    case (ADD_ITEM):
+    case (QR_READER_ADD_ITEM):
       return Object.assign({},
         state,
         {
           items: [action.payload, ...state.items]
         }
       );
-    case (CLEAN):
+    case (QR_READER_CLEAN):
       return Object.assign({},
         state,
-        {
-          items: []
-        }
+        INITIAL_STATE
       );
     default:
        return state;
