@@ -3,8 +3,7 @@
   <textarea mdInput
             [(ngModel)]="msg"
             placeholder="message"
-            (keyup)="update()"
-            (change)="update()"
+            (ngModelChange)="changeMsg()"
             rows="5"></textarea>
 </md-input-container>
 
@@ -12,17 +11,15 @@
   <input mdInput
          [(ngModel)]="senderPriv"
          placeholder="Sender Privkey"
-         (keyup)="update()"
-         (change)="update()"
+         (ngModelChange)="changeSenderPriv()"
          align="start"/>
 </md-input-container>
 
 <md-input-container class="full-width">
   <input mdInput
-         [(ngModel)]="recipientPubkey"
+         [(ngModel)]="recipientPub"
          placeholder="Recipient Pubkey"
-         (keyup)="update()"
-         (change)="update()"
+         (ngModelChange)="changeRecipientPub()"
          align="start"/>
 </md-input-container>
 
@@ -31,7 +28,7 @@
 
 <md-input-container class="full-width">
   <textarea mdInput
-            [(ngModel)]="encryptedMsg"
+            [ngModel]="encryptedMsg"
             placeholder="Encrypted Message"
             rows="8"
             readonly></textarea>
@@ -39,5 +36,5 @@
 
 
 <div class="actions">
-  <button md-raised-button color="accent" (click)="reset()">Clean</button>
+  <button md-raised-button color="accent" (click)="clear()">Clean</button>
 </div>

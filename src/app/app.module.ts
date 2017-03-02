@@ -30,6 +30,7 @@ import { toolbarReducer } from './reducers/toolbarReducer';
 import { qrReaderReducer } from './reducers/qrReaderReducer';
 import { checkSignatureReducer } from './reducers/checkSignatureReducer';
 import { eciesDecryptReducer } from './reducers/eciesDecryptReducer';
+import { eciesEncryptReducer } from './reducers/eciesEncryptReducer';
 
 // components
 import { HomeComponent } from './home/home.component';
@@ -48,7 +49,8 @@ const reducers = {
   toolbar: toolbarReducer,
   qrReader: qrReaderReducer,
   checkSignature: checkSignatureReducer,
-  eciesDecrypt: eciesDecryptReducer
+  eciesDecrypt: eciesDecryptReducer,
+  eciesEncrypt: eciesEncryptReducer
 };
 
 const developmentReducer: ActionReducer<any> = compose(storeFreeze, combineReducers)(reducers);

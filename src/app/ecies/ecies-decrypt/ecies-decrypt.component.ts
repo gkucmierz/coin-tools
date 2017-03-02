@@ -62,7 +62,6 @@ export class EciesDecryptComponent implements OnInit {
       payload: this.senderPub });
   }
 
-
   clear() {
     this.store.dispatch({ type: ECIES_DECRYPT_CLEAR });
   }
