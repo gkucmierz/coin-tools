@@ -29,6 +29,7 @@ import { storeFreeze } from 'ngrx-store-freeze';
 import { toolbarReducer } from './reducers/toolbarReducer';
 import { qrReaderReducer } from './reducers/qrReaderReducer';
 import { checkSignatureReducer } from './reducers/checkSignatureReducer';
+import { eciesDecryptReducer } from './reducers/eciesDecryptReducer';
 
 // components
 import { HomeComponent } from './home/home.component';
@@ -46,7 +47,8 @@ import { VanityAddressComponent } from './vanity-address/vanity-address.componen
 const reducers = {
   toolbar: toolbarReducer,
   qrReader: qrReaderReducer,
-  checkSignature: checkSignatureReducer
+  checkSignature: checkSignatureReducer,
+  eciesDecrypt: eciesDecryptReducer
 };
 
 const developmentReducer: ActionReducer<any> = compose(storeFreeze, combineReducers)(reducers);

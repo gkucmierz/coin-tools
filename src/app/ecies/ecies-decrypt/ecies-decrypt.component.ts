@@ -4,6 +4,11 @@ import { BitcoreService } from '../../services/bitcore.service';
 
 import { Store } from '@ngrx/store';
 import { SET_TITLE } from '../../reducers/toolbarReducer';
+import { ECIES_DECRYPT_SET_ENCRYPTED_MSG } from '../../reducers/eciesDecryptReducer';
+import { ECIES_DECRYPT_SET_RECIPIENT_PRIV } from '../../reducers/eciesDecryptReducer';
+import { ECIES_DECRYPT_SET_SENDER_PUB } from '../../reducers/eciesDecryptReducer';
+import { ECIES_DECRYPT_CLEAR } from '../../reducers/eciesDecryptReducer';
+
 
 let base64 = require('base64-js');
 
@@ -13,12 +18,10 @@ let base64 = require('base64-js');
   styleUrls: ['./ecies-decrypt.component.scss']
 })
 export class EciesDecryptComponent implements OnInit {
-
-  public encryptedMsg = `A06fJAU2G2iejL+89LIVOfYNKQMaIBgRJ3b96QxBhpDY+MaXsOPuZgnIjksj7WfhLIlbTExswwQVP9Je82+ai/SAr8VosOEBi7cn/TQsu5bKmKBljS8wJ9ZGqZXI9/bncY/fSGKjn1iNXYPTpbXr37/jSvyHnbTC1NaIfruqC9+HUxn14yG3c6dDmPL2hO13L2xtV8X2vwGk/2RdbyMlWXiaeRVKs7sJWJE7sBgOvXv64ZUqSI0kMYNO8lS8hMSCbYMdjdfuLoq/qHqS3NBbc1HKv3s0sNonaowFcJ3p3kLKCSH1K65fIl5/ulWwJC3Loax2yqaV70SoZEvzWQqSaRkXqFU2Yylex3DoYMGpcOcg39KXU6q5nqb3xYR4Yr9W6Nd/QUMUf/11W1o+bZELqdvjORvwzTxm5YEyn4n8FbBR9S9Q5eG74eWVXbF44M1Q0zWgEDHsupUL8gllHlO2/y8x5/P3BaLltf+Q4B3cFzPK`;
-  public recipientPriv = 'L49Xk4WCeYFeMBBzsa9B4sdWANTi5eRA9JCEq8gZjCn19xqjrzYP';
-  // KwSfvc92pxP9KMEMBNSn2YHuV8GV5XsRp8mah1mcnmWz33sdYGvU
-  public senderPub = '034e9f2405361b689e8cbfbcf4b21539f60d29031a2018112776fde90c418690d8';
-  public msg;
+  private encryptedMsg;
+  private recipientPriv;
+  private senderPub;
+  private msg;
 
   constructor(private bitcore:BitcoreService,
               private store: Store<any>) { }
@@ -29,7 +32,7 @@ export class EciesDecryptComponent implements OnInit {
     const Message = this.bitcore.message;
 
     try {
-      let msgBuff = base64.toByteArray(this.encryptedMsg.trim());
+      let msgBuff = base64.toByteArray((this.encryptedMsg||'').trim());
       let privkey = PrivateKey.fromString(this.recipientPriv);
       let pubkey = new PublicKey(this.senderPub);
       const Buffer = ECIES().privateKey(privkey).publicKey(pubkey).encrypt('').constructor;
@@ -44,15 +47,34 @@ export class EciesDecryptComponent implements OnInit {
     };
   }
 
-  reset() {
-    this.encryptedMsg = '';
-    this.recipientPriv = '';
-    this.senderPub = '';
-    this.update();
+  changeEncryptedMsg() {
+    this.store.dispatch({ type: ECIES_DECRYPT_SET_ENCRYPTED_MSG,
+      payload: this.encryptedMsg });
+  }
+
+  changeRecipientPriv() {
+    this.store.dispatch({ type: ECIES_DECRYPT_SET_RECIPIENT_PRIV,
+      payload: this.recipientPriv });
+  }
+
+  changeSenderPub() {
+    this.store.dispatch({ type: ECIES_DECRYPT_SET_SENDER_PUB,
+      payload: this.senderPub });
+  }
+
+
+  clear() {
+    this.store.dispatch({ type: ECIES_DECRYPT_CLEAR });
   }
 
   ngOnInit() {
-    this.update();
     this.store.dispatch({ type: SET_TITLE, payload: 'Decrypt Message' });
+
+    this.store.select('eciesDecrypt').subscribe(store => {
+      this.encryptedMsg = store['encryptrdMsg'];
+      this.recipientPriv = store['recipientPriv'];
+      this.senderPub = store['senderPub'];
+      this.update();
+    });
   }
 }
