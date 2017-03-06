@@ -1,6 +1,6 @@
 webpackJsonp([1,4],{
 
-/***/ 33:
+/***/ 34:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25,7 +25,7 @@ var toolbarReducer = function (state, action) {
 
 /***/ }),
 
-/***/ 449:
+/***/ 450:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -56,20 +56,20 @@ var qrReaderReducer = function (state, action) {
 
 /***/ }),
 
-/***/ 450:
+/***/ 451:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_slim_loading_bar__ = __webpack_require__(491);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(496);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__(131);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_throw__ = __webpack_require__(872);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_throw__ = __webpack_require__(873);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_throw___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_throw__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DataService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -139,18 +139,19 @@ var DataService = (function () {
     DataService.prototype.proxyUrl = function (url) {
         return "" + this.corsProxyEndpoint + encodeURIComponent(url);
     };
-    DataService = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* Injectable */])(), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2_ng2_slim_loading_bar__["b" /* SlimLoadingBarService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2_ng2_slim_loading_bar__["b" /* SlimLoadingBarService */]) === 'function' && _b) || Object])
-    ], DataService);
     return DataService;
-    var _a, _b;
 }());
+DataService = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* Injectable */])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2_ng2_slim_loading_bar__["b" /* SlimLoadingBarService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ng2_slim_loading_bar__["b" /* SlimLoadingBarService */]) === "function" && _b || Object])
+], DataService);
+
+var _a, _b;
 //# sourceMappingURL=/Users/gkucmierz/learn/coin-tools/src/data.service.js.map
 
 /***/ }),
 
-/***/ 451:
+/***/ 452:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -159,6 +160,7 @@ var DataService = (function () {
 // The build system defaults to the dev environment which uses `environment.ts`, but if you do
 // `ng build --env=prod` then `environment.prod.ts` will be used instead.
 // The list of which env maps to which file can be found in `angular-cli.json`.
+// The file contents for the current environment will overwrite these during build.
 var environment = {
     production: false
 };
@@ -166,7 +168,7 @@ var environment = {
 
 /***/ }),
 
-/***/ 509:
+/***/ 510:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -175,20 +177,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 509;
+webpackEmptyContext.id = 510;
 
 
 /***/ }),
 
-/***/ 510:
+/***/ 511:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(636);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(637);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(451);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(675);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(452);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(676);
 
 
 
@@ -201,13 +203,13 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 674:
+/***/ 675:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_store__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers_toolbarReducer__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_store__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers_toolbarReducer__ = __webpack_require__(34);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -258,55 +260,56 @@ var AppComponent = (function () {
             _this.title = store['title'];
         });
     };
-    AppComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
-            selector: 'app-root',
-            template: __webpack_require__(854),
-            styles: [__webpack_require__(843)]
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */]) === 'function' && _a) || Object])
-    ], AppComponent);
     return AppComponent;
-    var _a;
 }());
+AppComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
+        selector: 'app-root',
+        template: __webpack_require__(855),
+        styles: [__webpack_require__(840)]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */]) === "function" && _a || Object])
+], AppComponent);
+
+var _a;
 //# sourceMappingURL=/Users/gkucmierz/learn/coin-tools/src/app.component.js.map
 
 /***/ }),
 
-/***/ 675:
+/***/ 676:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(656);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_material__ = __webpack_require__(620);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(657);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_material__ = __webpack_require__(621);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ng2_slim_loading_bar__ = __webpack_require__(491);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__environments_environment__ = __webpack_require__(451);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(674);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_hammerjs__ = __webpack_require__(839);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__environments_environment__ = __webpack_require__(452);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(675);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_hammerjs__ = __webpack_require__(851);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_hammerjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_hammerjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_bitcore_service__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_data_service__ = __webpack_require__(450);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ngrx_store__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ngrx_core_compose__ = __webpack_require__(667);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_bitcore_service__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_data_service__ = __webpack_require__(451);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ngrx_store__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ngrx_core_compose__ = __webpack_require__(668);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ngrx_core_compose___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__ngrx_core_compose__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_ngrx_store_freeze__ = __webpack_require__(841);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_ngrx_store_freeze__ = __webpack_require__(853);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_ngrx_store_freeze___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_ngrx_store_freeze__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__reducers_toolbarReducer__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__reducers_qrReaderReducer__ = __webpack_require__(449);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__home_home_component__ = __webpack_require__(680);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__not_found_not_found_component__ = __webpack_require__(681);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__sign_message_sign_message_component__ = __webpack_require__(684);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__check_signature_check_signature_component__ = __webpack_require__(676);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__ecies_ecies_component__ = __webpack_require__(679);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ecies_ecies_encrypt_ecies_encrypt_component__ = __webpack_require__(678);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ecies_ecies_decrypt_ecies_decrypt_component__ = __webpack_require__(677);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__send_from_privkey_send_from_privkey_component__ = __webpack_require__(683);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__qr_reader_qr_reader_component__ = __webpack_require__(682);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__vanity_address_vanity_address_component__ = __webpack_require__(685);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__reducers_toolbarReducer__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__reducers_qrReaderReducer__ = __webpack_require__(450);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__home_home_component__ = __webpack_require__(681);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__not_found_not_found_component__ = __webpack_require__(682);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__sign_message_sign_message_component__ = __webpack_require__(685);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__check_signature_check_signature_component__ = __webpack_require__(677);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__ecies_ecies_component__ = __webpack_require__(680);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ecies_ecies_encrypt_ecies_encrypt_component__ = __webpack_require__(679);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ecies_ecies_decrypt_ecies_decrypt_component__ = __webpack_require__(678);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__send_from_privkey_send_from_privkey_component__ = __webpack_require__(684);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__qr_reader_qr_reader_component__ = __webpack_require__(683);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__vanity_address_vanity_address_component__ = __webpack_require__(686);
 /* unused harmony export appReducer */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -315,9 +318,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 
 
 
@@ -328,13 +328,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+// services
+
+
+// Ngrx
 
 
 
+// reducers
 
 
-
-
+// components
 
 
 
@@ -403,53 +407,53 @@ var routeConfig = [
 var AppModule = (function () {
     function AppModule() {
     }
-    AppModule = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_17__home_home_component__["a" /* HomeComponent */],
-                __WEBPACK_IMPORTED_MODULE_18__not_found_not_found_component__["a" /* NotFoundComponent */],
-                __WEBPACK_IMPORTED_MODULE_19__sign_message_sign_message_component__["a" /* SignMessageComponent */],
-                __WEBPACK_IMPORTED_MODULE_20__check_signature_check_signature_component__["a" /* CheckSignatureComponent */],
-                __WEBPACK_IMPORTED_MODULE_21__ecies_ecies_component__["a" /* EciesComponent */],
-                __WEBPACK_IMPORTED_MODULE_22__ecies_ecies_encrypt_ecies_encrypt_component__["a" /* EciesEncryptComponent */],
-                __WEBPACK_IMPORTED_MODULE_23__ecies_ecies_decrypt_ecies_decrypt_component__["a" /* EciesDecryptComponent */],
-                __WEBPACK_IMPORTED_MODULE_24__send_from_privkey_send_from_privkey_component__["a" /* SendFromPrivkeyComponent */],
-                __WEBPACK_IMPORTED_MODULE_25__qr_reader_qr_reader_component__["a" /* QrReaderComponent */],
-                __WEBPACK_IMPORTED_MODULE_26__vanity_address_vanity_address_component__["a" /* VanityAddressComponent */]
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
-                __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
-                __WEBPACK_IMPORTED_MODULE_5__angular_material__["a" /* MaterialModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_6_ng2_slim_loading_bar__["a" /* SlimLoadingBarModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* RouterModule */].forRoot(routeConfig),
-                __WEBPACK_IMPORTED_MODULE_12__ngrx_store__["b" /* StoreModule */].provideStore(appReducer)
-            ],
-            providers: [
-                __WEBPACK_IMPORTED_MODULE_10__services_bitcore_service__["a" /* BitcoreService */],
-                __WEBPACK_IMPORTED_MODULE_11__services_data_service__["a" /* DataService */]
-            ],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */]],
-            schemas: [__WEBPACK_IMPORTED_MODULE_1__angular_core__["c" /* CUSTOM_ELEMENTS_SCHEMA */]]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AppModule);
     return AppModule;
 }());
+AppModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_17__home_home_component__["a" /* HomeComponent */],
+            __WEBPACK_IMPORTED_MODULE_18__not_found_not_found_component__["a" /* NotFoundComponent */],
+            __WEBPACK_IMPORTED_MODULE_19__sign_message_sign_message_component__["a" /* SignMessageComponent */],
+            __WEBPACK_IMPORTED_MODULE_20__check_signature_check_signature_component__["a" /* CheckSignatureComponent */],
+            __WEBPACK_IMPORTED_MODULE_21__ecies_ecies_component__["a" /* EciesComponent */],
+            __WEBPACK_IMPORTED_MODULE_22__ecies_ecies_encrypt_ecies_encrypt_component__["a" /* EciesEncryptComponent */],
+            __WEBPACK_IMPORTED_MODULE_23__ecies_ecies_decrypt_ecies_decrypt_component__["a" /* EciesDecryptComponent */],
+            __WEBPACK_IMPORTED_MODULE_24__send_from_privkey_send_from_privkey_component__["a" /* SendFromPrivkeyComponent */],
+            __WEBPACK_IMPORTED_MODULE_25__qr_reader_qr_reader_component__["a" /* QrReaderComponent */],
+            __WEBPACK_IMPORTED_MODULE_26__vanity_address_vanity_address_component__["a" /* VanityAddressComponent */]
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
+            __WEBPACK_IMPORTED_MODULE_5__angular_material__["a" /* MaterialModule */].forRoot(),
+            __WEBPACK_IMPORTED_MODULE_6_ng2_slim_loading_bar__["a" /* SlimLoadingBarModule */].forRoot(),
+            __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* RouterModule */].forRoot(routeConfig),
+            __WEBPACK_IMPORTED_MODULE_12__ngrx_store__["b" /* StoreModule */].provideStore(appReducer)
+        ],
+        providers: [
+            __WEBPACK_IMPORTED_MODULE_10__services_bitcore_service__["a" /* BitcoreService */],
+            __WEBPACK_IMPORTED_MODULE_11__services_data_service__["a" /* DataService */]
+        ],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */]],
+        schemas: [__WEBPACK_IMPORTED_MODULE_1__angular_core__["c" /* CUSTOM_ELEMENTS_SCHEMA */]]
+    })
+], AppModule);
+
 //# sourceMappingURL=/Users/gkucmierz/learn/coin-tools/src/app.module.js.map
 
 /***/ }),
 
-/***/ 676:
+/***/ 677:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngrx_store__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducers_toolbarReducer__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngrx_store__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducers_toolbarReducer__ = __webpack_require__(34);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckSignatureComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -491,29 +495,30 @@ var CheckSignatureComponent = (function () {
     CheckSignatureComponent.prototype.ngOnInit = function () {
         this.store.dispatch({ type: __WEBPACK_IMPORTED_MODULE_3__reducers_toolbarReducer__["b" /* SET_TITLE */], payload: 'Check Signature' });
     };
-    CheckSignatureComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
-            selector: 'app-check-signature',
-            template: __webpack_require__(855),
-            styles: [__webpack_require__(844)]
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["c" /* Store */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["c" /* Store */]) === 'function' && _b) || Object])
-    ], CheckSignatureComponent);
     return CheckSignatureComponent;
-    var _a, _b;
 }());
+CheckSignatureComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
+        selector: 'app-check-signature',
+        template: __webpack_require__(856),
+        styles: [__webpack_require__(841)]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["c" /* Store */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["c" /* Store */]) === "function" && _b || Object])
+], CheckSignatureComponent);
+
+var _a, _b;
 //# sourceMappingURL=/Users/gkucmierz/learn/coin-tools/src/check-signature.component.js.map
 
 /***/ }),
 
-/***/ 677:
+/***/ 678:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngrx_store__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducers_toolbarReducer__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngrx_store__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducers_toolbarReducer__ = __webpack_require__(34);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EciesDecryptComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -528,7 +533,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var base64 = __webpack_require__(452);
+var base64 = __webpack_require__(453);
 var EciesDecryptComponent = (function () {
     function EciesDecryptComponent(bitcore, store) {
         this.bitcore = bitcore;
@@ -568,29 +573,30 @@ var EciesDecryptComponent = (function () {
         this.update();
         this.store.dispatch({ type: __WEBPACK_IMPORTED_MODULE_3__reducers_toolbarReducer__["b" /* SET_TITLE */], payload: 'Decrypt Message' });
     };
-    EciesDecryptComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
-            selector: 'app-ecies-decrypt',
-            template: __webpack_require__(856),
-            styles: [__webpack_require__(845)]
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["c" /* Store */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["c" /* Store */]) === 'function' && _b) || Object])
-    ], EciesDecryptComponent);
     return EciesDecryptComponent;
-    var _a, _b;
 }());
+EciesDecryptComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
+        selector: 'app-ecies-decrypt',
+        template: __webpack_require__(857),
+        styles: [__webpack_require__(842)]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["c" /* Store */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["c" /* Store */]) === "function" && _b || Object])
+], EciesDecryptComponent);
+
+var _a, _b;
 //# sourceMappingURL=/Users/gkucmierz/learn/coin-tools/src/ecies-decrypt.component.js.map
 
 /***/ }),
 
-/***/ 678:
+/***/ 679:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngrx_store__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducers_toolbarReducer__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngrx_store__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducers_toolbarReducer__ = __webpack_require__(34);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EciesEncryptComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -605,7 +611,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var base64 = __webpack_require__(452);
+var base64 = __webpack_require__(453);
 var EciesEncryptComponent = (function () {
     function EciesEncryptComponent(bitcore, store) {
         this.bitcore = bitcore;
@@ -642,22 +648,23 @@ var EciesEncryptComponent = (function () {
         this.update();
         this.store.dispatch({ type: __WEBPACK_IMPORTED_MODULE_3__reducers_toolbarReducer__["b" /* SET_TITLE */], payload: 'Encrypt Message' });
     };
-    EciesEncryptComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
-            selector: 'app-ecies-encrypt',
-            template: __webpack_require__(857),
-            styles: [__webpack_require__(846)]
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["c" /* Store */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["c" /* Store */]) === 'function' && _b) || Object])
-    ], EciesEncryptComponent);
     return EciesEncryptComponent;
-    var _a, _b;
 }());
+EciesEncryptComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
+        selector: 'app-ecies-encrypt',
+        template: __webpack_require__(858),
+        styles: [__webpack_require__(843)]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["c" /* Store */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["c" /* Store */]) === "function" && _b || Object])
+], EciesEncryptComponent);
+
+var _a, _b;
 //# sourceMappingURL=/Users/gkucmierz/learn/coin-tools/src/ecies-encrypt.component.js.map
 
 /***/ }),
 
-/***/ 679:
+/***/ 680:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -678,27 +685,28 @@ var EciesComponent = (function () {
     }
     EciesComponent.prototype.ngOnInit = function () {
     };
-    EciesComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
-            selector: 'app-ecies',
-            template: __webpack_require__(858),
-            styles: [__webpack_require__(847)]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], EciesComponent);
     return EciesComponent;
 }());
+EciesComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
+        selector: 'app-ecies',
+        template: __webpack_require__(859),
+        styles: [__webpack_require__(844)]
+    }),
+    __metadata("design:paramtypes", [])
+], EciesComponent);
+
 //# sourceMappingURL=/Users/gkucmierz/learn/coin-tools/src/ecies.component.js.map
 
 /***/ }),
 
-/***/ 680:
+/***/ 681:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_store__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers_toolbarReducer__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_store__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers_toolbarReducer__ = __webpack_require__(34);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -719,28 +727,29 @@ var HomeComponent = (function () {
     HomeComponent.prototype.ngOnInit = function () {
         this.store.dispatch({ type: __WEBPACK_IMPORTED_MODULE_2__reducers_toolbarReducer__["b" /* SET_TITLE */], payload: 'Coin Tools' });
     };
-    HomeComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
-            selector: 'app-home',
-            template: __webpack_require__(859),
-            styles: [__webpack_require__(851)]
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */]) === 'function' && _a) || Object])
-    ], HomeComponent);
     return HomeComponent;
-    var _a;
 }());
+HomeComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
+        selector: 'app-home',
+        template: __webpack_require__(860),
+        styles: [__webpack_require__(848)]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */]) === "function" && _a || Object])
+], HomeComponent);
+
+var _a;
 //# sourceMappingURL=/Users/gkucmierz/learn/coin-tools/src/home.component.js.map
 
 /***/ }),
 
-/***/ 681:
+/***/ 682:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_store__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers_toolbarReducer__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_store__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers_toolbarReducer__ = __webpack_require__(34);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NotFoundComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -761,29 +770,30 @@ var NotFoundComponent = (function () {
     NotFoundComponent.prototype.ngOnInit = function () {
         this.store.dispatch({ type: __WEBPACK_IMPORTED_MODULE_2__reducers_toolbarReducer__["b" /* SET_TITLE */], payload: 'Page not found' });
     };
-    NotFoundComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
-            selector: 'app-not-found',
-            template: __webpack_require__(860),
-            styles: [__webpack_require__(852)]
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */]) === 'function' && _a) || Object])
-    ], NotFoundComponent);
     return NotFoundComponent;
-    var _a;
 }());
+NotFoundComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
+        selector: 'app-not-found',
+        template: __webpack_require__(861),
+        styles: [__webpack_require__(849)]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */]) === "function" && _a || Object])
+], NotFoundComponent);
+
+var _a;
 //# sourceMappingURL=/Users/gkucmierz/learn/coin-tools/src/not-found.component.js.map
 
 /***/ }),
 
-/***/ 682:
+/***/ 683:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_store__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers_toolbarReducer__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducers_qrReaderReducer__ = __webpack_require__(449);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_store__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers_toolbarReducer__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducers_qrReaderReducer__ = __webpack_require__(450);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return QrReaderComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -798,7 +808,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var jsQR = __webpack_require__(840);
+var jsQR = __webpack_require__(852);
 var QrReaderComponent = (function () {
     function QrReaderComponent(store, el) {
         this.store = store;
@@ -878,30 +888,31 @@ var QrReaderComponent = (function () {
     QrReaderComponent.prototype.ngOnDestroy = function () {
         this.stop();
     };
-    QrReaderComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
-            selector: 'app-qr-reader',
-            template: __webpack_require__(861),
-            styles: [__webpack_require__(848)]
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* ElementRef */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* ElementRef */]) === 'function' && _b) || Object])
-    ], QrReaderComponent);
     return QrReaderComponent;
-    var _a, _b;
 }());
+QrReaderComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
+        selector: 'app-qr-reader',
+        template: __webpack_require__(862),
+        styles: [__webpack_require__(845)]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* ElementRef */]) === "function" && _b || Object])
+], QrReaderComponent);
+
+var _a, _b;
 //# sourceMappingURL=/Users/gkucmierz/learn/coin-tools/src/qr-reader.component.js.map
 
 /***/ }),
 
-/***/ 683:
+/***/ 684:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_data_service__ = __webpack_require__(450);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngrx_store__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__reducers_toolbarReducer__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_data_service__ = __webpack_require__(451);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngrx_store__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__reducers_toolbarReducer__ = __webpack_require__(34);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SendFromPrivkeyComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1032,29 +1043,30 @@ var SendFromPrivkeyComponent = (function () {
         this.privkeyUpdate();
         this.store.dispatch({ type: __WEBPACK_IMPORTED_MODULE_4__reducers_toolbarReducer__["b" /* SET_TITLE */], payload: 'Send from Privkey' });
     };
-    SendFromPrivkeyComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
-            selector: 'app-send-from-privkey',
-            template: __webpack_require__(862),
-            styles: [__webpack_require__(849)]
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_data_service__["a" /* DataService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_data_service__["a" /* DataService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ngrx_store__["c" /* Store */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__ngrx_store__["c" /* Store */]) === 'function' && _c) || Object])
-    ], SendFromPrivkeyComponent);
     return SendFromPrivkeyComponent;
-    var _a, _b, _c;
 }());
+SendFromPrivkeyComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
+        selector: 'app-send-from-privkey',
+        template: __webpack_require__(863),
+        styles: [__webpack_require__(846)]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_data_service__["a" /* DataService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_data_service__["a" /* DataService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ngrx_store__["c" /* Store */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ngrx_store__["c" /* Store */]) === "function" && _c || Object])
+], SendFromPrivkeyComponent);
+
+var _a, _b, _c;
 //# sourceMappingURL=/Users/gkucmierz/learn/coin-tools/src/send-from-privkey.component.js.map
 
 /***/ }),
 
-/***/ 684:
+/***/ 685:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngrx_store__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducers_toolbarReducer__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngrx_store__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducers_toolbarReducer__ = __webpack_require__(34);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignMessageComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1089,28 +1101,29 @@ var SignMessageComponent = (function () {
     SignMessageComponent.prototype.ngOnInit = function () {
         this.store.dispatch({ type: __WEBPACK_IMPORTED_MODULE_3__reducers_toolbarReducer__["b" /* SET_TITLE */], payload: 'Sign Message' });
     };
-    SignMessageComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
-            selector: 'app-sign-message',
-            template: __webpack_require__(863),
-            styles: [__webpack_require__(853)]
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["c" /* Store */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["c" /* Store */]) === 'function' && _b) || Object])
-    ], SignMessageComponent);
     return SignMessageComponent;
-    var _a, _b;
 }());
+SignMessageComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
+        selector: 'app-sign-message',
+        template: __webpack_require__(864),
+        styles: [__webpack_require__(850)]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_bitcore_service__["a" /* BitcoreService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["c" /* Store */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["c" /* Store */]) === "function" && _b || Object])
+], SignMessageComponent);
+
+var _a, _b;
 //# sourceMappingURL=/Users/gkucmierz/learn/coin-tools/src/sign-message.component.js.map
 
 /***/ }),
 
-/***/ 685:
+/***/ 686:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_store__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers_toolbarReducer__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_store__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers_toolbarReducer__ = __webpack_require__(34);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VanityAddressComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1188,184 +1201,306 @@ var VanityAddressComponent = (function () {
     VanityAddressComponent.prototype.ngOnDestroy = function () {
         this.terminateWorkers();
     };
-    VanityAddressComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
-            selector: 'app-vanity-address',
-            template: __webpack_require__(864),
-            styles: [__webpack_require__(850)]
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* ApplicationRef */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* ApplicationRef */]) === 'function' && _b) || Object])
-    ], VanityAddressComponent);
     return VanityAddressComponent;
-    var _a, _b;
 }());
+VanityAddressComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
+        selector: 'app-vanity-address',
+        template: __webpack_require__(865),
+        styles: [__webpack_require__(847)]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["c" /* Store */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* ApplicationRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* ApplicationRef */]) === "function" && _b || Object])
+], VanityAddressComponent);
+
+var _a, _b;
 //# sourceMappingURL=/Users/gkucmierz/learn/coin-tools/src/vanity-address.component.js.map
 
 /***/ }),
 
-/***/ 843:
-/***/ (function(module, exports) {
+/***/ 840:
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "md-sidenav-container {\n  height: 100%; }\n\n.app-sidenav {\n  min-width: 250px; }\n\n.more {\n  visibility: hidden; }\n\n[routerLink] {\n  cursor: pointer; }\n\nmd-list-item {\n  cursor: pointer; }\n\na:focus,\na:active {\n  outline: 0;\n  border: none; }\n"
+exports = module.exports = __webpack_require__(23)();
+// imports
+
+
+// module
+exports.push([module.i, "md-sidenav-container {\n  height: 100%; }\n\n.app-sidenav {\n  min-width: 250px; }\n\n.more {\n  visibility: hidden; }\n\n[routerLink] {\n  cursor: pointer; }\n\nmd-list-item {\n  cursor: pointer; }\n\na:focus,\na:active {\n  outline: 0;\n  border: none; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 841:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(23)();
+// imports
+
+
+// module
+exports.push([module.i, ".full-width {\n  width: 100%; }\n\n.valid {\n  color: #090; }\n\n.not-valid {\n  color: #c00; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 842:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(23)();
+// imports
+
+
+// module
+exports.push([module.i, ".full-width {\n  width: 100%; }\n\n.actions {\n  text-align: right; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 843:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(23)();
+// imports
+
+
+// module
+exports.push([module.i, ".full-width {\n  width: 100%; }\n\n.actions {\n  text-align: right; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 844:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = ".full-width {\n  width: 100%; }\n\n.valid {\n  color: #090; }\n\n.not-valid {\n  color: #c00; }\n"
+exports = module.exports = __webpack_require__(23)();
+// imports
+
+
+// module
+exports.push([module.i, "nav {\n  width: calc(100% + 48px);\n  margin: -24px -24px 16px !important; }\n\n@media (max-width: 600px) {\n  nav {\n    width: calc(100% + 32px);\n    margin: 0 -16px !important;\n    margin-top: -24px !important; } }\n\n[md-tab-link] {\n  width: 50%; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 845:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = ".full-width {\n  width: 100%; }\n\n.actions {\n  text-align: right; }\n"
+exports = module.exports = __webpack_require__(23)();
+// imports
+
+
+// module
+exports.push([module.i, ".actions {\n  text-align: right; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 846:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = ".full-width {\n  width: 100%; }\n\n.actions {\n  text-align: right; }\n"
+exports = module.exports = __webpack_require__(23)();
+// imports
+
+
+// module
+exports.push([module.i, ".full-width {\n  width: 100%; }\n\n.actions {\n  text-align: right; }\n\n.align-left {\n  text-align: left; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 847:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "nav {\n  width: calc(100% + 48px);\n  margin: -24px -24px 16px !important; }\n\n@media (max-width: 600px) {\n  nav {\n    width: calc(100% + 32px);\n    margin: 0 -16px !important;\n    margin-top: -24px !important; } }\n\n[md-tab-link] {\n  width: 50%; }\n"
+exports = module.exports = __webpack_require__(23)();
+// imports
+
+
+// module
+exports.push([module.i, ".full-width {\n  width: 100%; }\n\n.actions {\n  text-align: right; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 848:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = ".actions {\n  text-align: right; }\n"
+exports = module.exports = __webpack_require__(23)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 849:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = ".full-width {\n  width: 100%; }\n\n.actions {\n  text-align: right; }\n\n.align-left {\n  text-align: left; }\n"
+exports = module.exports = __webpack_require__(23)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 850:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = ".full-width {\n  width: 100%; }\n\n.actions {\n  text-align: right; }\n"
+exports = module.exports = __webpack_require__(23)();
+// imports
 
-/***/ }),
 
-/***/ 851:
-/***/ (function(module, exports) {
+// module
+exports.push([module.i, "\n.full-width {\n  width: 100%;\n}\n", ""]);
 
-module.exports = ""
+// exports
 
-/***/ }),
 
-/***/ 852:
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ 853:
-/***/ (function(module, exports) {
-
-module.exports = "\n.full-width {\n  width: 100%;\n}\n"
-
-/***/ }),
-
-/***/ 854:
-/***/ (function(module, exports) {
-
-module.exports = "<ng2-slim-loading-bar></ng2-slim-loading-bar>\n\n<md-sidenav-container (swipeleft)=\"sidenav.close()\">\n\n  <md-sidenav #sidenav\n              [mode]=\"!pinnedMenu ? 'over':'side'\"\n              class=\"app-sidenav\"\n              align=\"start\">\n\n    <md-nav-list>\n      <a md-list-item\n         (click)=\"!pinnedMenu && sidenav.close()\"\n         routerLink=\"/\">\n        <h3>Coin Tools</h3>\n      </a>\n\n      <md-divider></md-divider>\n\n      <a md-list-item\n         *ngFor=\"let tool of tools\"\n         (click)=\"!pinnedMenu && sidenav.close()\"\n         routerLink=\"/{{tool.route}}\">\n        {{tool.name}}\n      </a>\n    </md-nav-list>\n\n    <md-card>\n      <md-slide-toggle [(ngModel)]=\"pinnedMenu\">\n        Pinned Menu\n      </md-slide-toggle>\n    </md-card>\n\n  </md-sidenav>\n\n  <md-toolbar color=\"primary\">\n    <button md-icon-button (click)=\"sidenav.toggle()\">\n      <md-icon>menu</md-icon>\n    </button>\n\n    <span>{{title}}</span>\n\n    <button md-icon-button\n            class=\"more\"\n            [md-menu-trigger-for]=\"menu\">\n      <md-icon>more_vert</md-icon>\n    </button>\n  </md-toolbar>\n\n  <md-menu x-position=\"before\" #menu=\"mdMenu\">\n    <button md-menu-item>Option 1</button>\n    <button md-menu-item>Option 2</button>\n  </md-menu>\n\n  <router-outlet></router-outlet>\n\n</md-sidenav-container>\n"
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 855:
 /***/ (function(module, exports) {
 
-module.exports = "\n<md-card>\n\n  <md-input-container class=\"full-width\">\n    <textarea mdInput\n              [(ngModel)]=\"signedMsg\"\n              placeholder=\"signed message\"\n              (keyup)=\"change()\"\n              (change)=\"change()\"\n              rows=\"12\"></textarea>\n  </md-input-container>\n\n  <div *ngIf=\"valid\">\n    <md-icon class=\"valid\">done</md-icon>\n    <span>Message is correctly signed</span>\n  </div>\n\n  <div *ngIf=\"!valid\">\n    <md-icon class=\"not-valid\">error_outline</md-icon>\n    <span>Signature is not valid</span>\n  </div>\n\n</md-card>\n"
+module.exports = "<ng2-slim-loading-bar></ng2-slim-loading-bar>\n\n<md-sidenav-container (swipeleft)=\"sidenav.close()\">\n\n  <md-sidenav #sidenav\n              [mode]=\"!pinnedMenu ? 'over':'side'\"\n              class=\"app-sidenav\"\n              align=\"start\">\n\n    <md-nav-list>\n      <a md-list-item\n         (click)=\"!pinnedMenu && sidenav.close()\"\n         routerLink=\"/\">\n        <h3>Coin Tools</h3>\n      </a>\n\n      <md-divider></md-divider>\n\n      <a md-list-item\n         *ngFor=\"let tool of tools\"\n         (click)=\"!pinnedMenu && sidenav.close()\"\n         routerLink=\"/{{tool.route}}\">\n        {{tool.name}}\n      </a>\n    </md-nav-list>\n\n    <md-card>\n      <md-slide-toggle [(ngModel)]=\"pinnedMenu\">\n        Pinned Menu\n      </md-slide-toggle>\n    </md-card>\n\n  </md-sidenav>\n\n  <md-toolbar color=\"primary\">\n    <button md-icon-button (click)=\"sidenav.toggle()\">\n      <md-icon>menu</md-icon>\n    </button>\n\n    <span>{{title}}</span>\n\n    <button md-icon-button\n            class=\"more\"\n            [md-menu-trigger-for]=\"menu\">\n      <md-icon>more_vert</md-icon>\n    </button>\n  </md-toolbar>\n\n  <md-menu x-position=\"before\" #menu=\"mdMenu\">\n    <button md-menu-item>Option 1</button>\n    <button md-menu-item>Option 2</button>\n  </md-menu>\n\n  <router-outlet></router-outlet>\n\n</md-sidenav-container>\n"
 
 /***/ }),
 
 /***/ 856:
 /***/ (function(module, exports) {
 
-module.exports = "\n<md-input-container class=\"full-width\">\n  <textarea mdInput\n            [(ngModel)]=\"encryptedMsg\"\n            placeholder=\"Encrypted Message\"\n            (keyup)=\"update()\"\n            (change)=\"update()\"\n            rows=\"5\"></textarea>\n</md-input-container>\n\n<md-input-container class=\"full-width\">\n  <input mdInput\n         [(ngModel)]=\"recipientPriv\"\n         placeholder=\"Recipient Privkey\"\n         (keyup)=\"update()\"\n         (change)=\"update()\"\n         align=\"start\"/>\n</md-input-container>\n\n<md-input-container class=\"full-width\">\n  <input mdInput\n         [(ngModel)]=\"senderPub\"\n         placeholder=\"Sender Pubkey\"\n         (keyup)=\"update()\"\n         (change)=\"update()\"\n         align=\"start\"/>\n</md-input-container>\n\n\n<p>Decrypted Message</p>\n\n<md-input-container class=\"full-width\">\n  <textarea mdInput\n            [(ngModel)]=\"msg\"\n            placeholder=\"Message\"\n            rows=\"8\"\n            readonly></textarea>\n</md-input-container>\n\n\n<div class=\"actions\">\n  <button md-raised-button color=\"accent\" (click)=\"reset()\">Clean</button>\n</div>\n"
+module.exports = "\n<md-card>\n\n  <md-input-container class=\"full-width\">\n    <textarea mdInput\n              [(ngModel)]=\"signedMsg\"\n              placeholder=\"signed message\"\n              (keyup)=\"change()\"\n              (change)=\"change()\"\n              rows=\"12\"></textarea>\n  </md-input-container>\n\n  <div *ngIf=\"valid\">\n    <md-icon class=\"valid\">done</md-icon>\n    <span>Message is correctly signed</span>\n  </div>\n\n  <div *ngIf=\"!valid\">\n    <md-icon class=\"not-valid\">error_outline</md-icon>\n    <span>Signature is not valid</span>\n  </div>\n\n</md-card>\n"
 
 /***/ }),
 
 /***/ 857:
 /***/ (function(module, exports) {
 
-module.exports = "\n<md-input-container class=\"full-width\">\n  <textarea mdInput\n            [(ngModel)]=\"msg\"\n            placeholder=\"message\"\n            (keyup)=\"update()\"\n            (change)=\"update()\"\n            rows=\"5\"></textarea>\n</md-input-container>\n\n<md-input-container class=\"full-width\">\n  <input mdInput\n         [(ngModel)]=\"senderPriv\"\n         placeholder=\"Sender Privkey\"\n         (keyup)=\"update()\"\n         (change)=\"update()\"\n         align=\"start\"/>\n</md-input-container>\n\n<md-input-container class=\"full-width\">\n  <input mdInput\n         [(ngModel)]=\"recipientPubkey\"\n         placeholder=\"Recipient Pubkey\"\n         (keyup)=\"update()\"\n         (change)=\"update()\"\n         align=\"start\"/>\n</md-input-container>\n\n\n<p>Encrypted Message</p>\n\n<md-input-container class=\"full-width\">\n  <textarea mdInput\n            [(ngModel)]=\"encryptedMsg\"\n            placeholder=\"Encrypted Message\"\n            rows=\"8\"\n            readonly></textarea>\n</md-input-container>\n\n\n<div class=\"actions\">\n  <button md-raised-button color=\"accent\" (click)=\"reset()\">Clean</button>\n</div>\n"
+module.exports = "\n<md-input-container class=\"full-width\">\n  <textarea mdInput\n            [(ngModel)]=\"encryptedMsg\"\n            placeholder=\"Encrypted Message\"\n            (keyup)=\"update()\"\n            (change)=\"update()\"\n            rows=\"5\"></textarea>\n</md-input-container>\n\n<md-input-container class=\"full-width\">\n  <input mdInput\n         [(ngModel)]=\"recipientPriv\"\n         placeholder=\"Recipient Privkey\"\n         (keyup)=\"update()\"\n         (change)=\"update()\"\n         align=\"start\"/>\n</md-input-container>\n\n<md-input-container class=\"full-width\">\n  <input mdInput\n         [(ngModel)]=\"senderPub\"\n         placeholder=\"Sender Pubkey\"\n         (keyup)=\"update()\"\n         (change)=\"update()\"\n         align=\"start\"/>\n</md-input-container>\n\n\n<p>Decrypted Message</p>\n\n<md-input-container class=\"full-width\">\n  <textarea mdInput\n            [(ngModel)]=\"msg\"\n            placeholder=\"Message\"\n            rows=\"8\"\n            readonly></textarea>\n</md-input-container>\n\n\n<div class=\"actions\">\n  <button md-raised-button color=\"accent\" (click)=\"reset()\">Clean</button>\n</div>\n"
 
 /***/ }),
 
 /***/ 858:
 /***/ (function(module, exports) {
 
-module.exports = "\n<md-card>\n\n  <nav md-tab-nav-bar>\n    <a md-tab-link\n       [routerLink]=\"['encrypt']\"\n       routerLinkActive #encrypt=\"routerLinkActive\"\n       [active]=\"encrypt.isActive\">\n      Encrypt\n    </a>\n    <a md-tab-link\n       [routerLink]=\"['decrypt']\"\n       routerLinkActive #decrypt=\"routerLinkActive\"\n       [active]=\"decrypt.isActive\">\n      Decrypt\n    </a>\n  </nav>\n\n  <md-card-content>\n    <router-outlet></router-outlet>\n  </md-card-content>\n\n</md-card>\n\n"
+module.exports = "\n<md-input-container class=\"full-width\">\n  <textarea mdInput\n            [(ngModel)]=\"msg\"\n            placeholder=\"message\"\n            (keyup)=\"update()\"\n            (change)=\"update()\"\n            rows=\"5\"></textarea>\n</md-input-container>\n\n<md-input-container class=\"full-width\">\n  <input mdInput\n         [(ngModel)]=\"senderPriv\"\n         placeholder=\"Sender Privkey\"\n         (keyup)=\"update()\"\n         (change)=\"update()\"\n         align=\"start\"/>\n</md-input-container>\n\n<md-input-container class=\"full-width\">\n  <input mdInput\n         [(ngModel)]=\"recipientPubkey\"\n         placeholder=\"Recipient Pubkey\"\n         (keyup)=\"update()\"\n         (change)=\"update()\"\n         align=\"start\"/>\n</md-input-container>\n\n\n<p>Encrypted Message</p>\n\n<md-input-container class=\"full-width\">\n  <textarea mdInput\n            [(ngModel)]=\"encryptedMsg\"\n            placeholder=\"Encrypted Message\"\n            rows=\"8\"\n            readonly></textarea>\n</md-input-container>\n\n\n<div class=\"actions\">\n  <button md-raised-button color=\"accent\" (click)=\"reset()\">Clean</button>\n</div>\n"
 
 /***/ }),
 
 /***/ 859:
 /***/ (function(module, exports) {
 
-module.exports = "\n<md-card>\n  <h1>Bitcoin tools</h1>\n</md-card>\n"
+module.exports = "\n<md-card>\n\n  <nav md-tab-nav-bar>\n    <a md-tab-link\n       [routerLink]=\"['encrypt']\"\n       routerLinkActive #encrypt=\"routerLinkActive\"\n       [active]=\"encrypt.isActive\">\n      Encrypt\n    </a>\n    <a md-tab-link\n       [routerLink]=\"['decrypt']\"\n       routerLinkActive #decrypt=\"routerLinkActive\"\n       [active]=\"decrypt.isActive\">\n      Decrypt\n    </a>\n  </nav>\n\n  <md-card-content>\n    <router-outlet></router-outlet>\n  </md-card-content>\n\n</md-card>\n\n"
 
 /***/ }),
 
 /***/ 860:
 /***/ (function(module, exports) {
 
-module.exports = "<md-card>\n  <h1>404 - page not found</h1>\n</md-card>\n"
+module.exports = "\n<md-card>\n  <h1>Bitcoin tools</h1>\n</md-card>\n"
 
 /***/ }),
 
 /***/ 861:
 /***/ (function(module, exports) {
 
-module.exports = "\n<md-card>\n\n  <video appVideo autoplay=\"true\" style=\"display:none;\"></video>\n  <canvas id=\"canvas\" style=\"width:640px; height:480px;\"></canvas>\n\n  <md-grid-list cols=\"1\" rowHeight=\"30px\">\n    <md-grid-tile\n        *ngFor=\"let item of items; let i = index \">\n      {{item}}\n    </md-grid-tile>\n  </md-grid-list>\n\n  <div class=\"actions\">\n    <!-- <button md-raised-button color=\"warn\" (click)=\"stop()\">Stop</button> -->\n    <button md-raised-button color=\"accent\" (click)=\"clean()\">Clean</button>\n  </div>\n\n</md-card>\n"
+module.exports = "<md-card>\n  <h1>404 - page not found</h1>\n</md-card>\n"
 
 /***/ }),
 
 /***/ 862:
 /***/ (function(module, exports) {
 
-module.exports = "\n<md-card>\n\n  <md-input-container class=\"full-width\">\n    <input mdInput\n           [(ngModel)]=\"privkey\"\n           placeholder=\"Privkey\"\n           (change)=\"privkeyUpdate()\"\n           (keyup)=\"privkeyUpdate()\"\n           align=\"start\"/>\n  </md-input-container>\n\n  <md-card class=\"align-left\" *ngIf=\"srcAddr\">\n    <md-card-content>\n      <div>Related Address: {{srcAddr}}</div>\n      <div *ngIf=\"unspents\">Unspent Outputs: {{unspents.length}}</div>\n      <div *ngIf=\"unspents\">Unspent Value: {{sumValue(unspents)}}</div>\n    </md-card-content>\n  </md-card>\n\n  <md-input-container class=\"full-width\">\n    <input mdInput\n           [(ngModel)]=\"address\"\n           placeholder=\"Destination Address\"\n           (change)=\"updateSummary()\"\n           (keyup)=\"updateSummary()\"\n           align=\"start\"/>\n  </md-input-container>\n\n  <md-input-container class=\"full-width\">\n    <input mdInput\n           type=\"number\"\n           min=\"0\"\n           step=\"0.0001\"\n           max=\"0.005\"\n           [(ngModel)]=\"networkFee\"\n           placeholder=\"Network Fee\"\n           (change)=\"updateSummary()\"\n           (keyup)=\"updateSummary()\"\n           align=\"start\"/>\n  </md-input-container>\n\n  <md-slide-toggle [(ngModel)]=\"doServiceFee\"\n                   (change)=\"updateSummary()\"\n                   mdTooltip=\"If you like this tool, please pay a little fee within this transaction, because it will help developing and maintaing this and other tools.\">\n    Pay Service Fee\n  </md-slide-toggle>\n\n  <md-card *ngIf=\"receiveAmount && !txHash\">\n    <md-card-title>Transaction Summary</md-card-title>\n    <md-card-content>\n      {{receiveAmount}} BTC => {{address}}\n    </md-card-content>\n  </md-card>\n\n  <md-card *ngIf=\"txHash\">\n    <md-card-title>Transaction Sent</md-card-title>\n    <md-card-content>\n      <a href=\"https://blockchain.info/pl/tx/{{txHash}}\" target=\"_blank\">\n        https://blockchain.info/pl/tx/{{txHash}}\n      </a>\n    </md-card-content>\n    <md-card-footer>\n      <button md-raised-button\n              color=\"accent\"\n              (click)=\"txHash = ''\">\n        OK\n      </button>\n    </md-card-footer>\n  </md-card>\n\n  <div class=\"actions\">\n    <button md-raised-button\n            color=\"accent\"\n            (click)=\"clean()\">\n      Clean\n    </button>\n\n    <button md-raised-button\n            color=\"primary\"\n            (click)=\"send()\"\n            [disabled]=\"!receiveAmount || txHash\">\n      Send Transaction\n    </button>\n  </div>\n\n</md-card>\n"
+module.exports = "\n<md-card>\n\n  <video appVideo autoplay=\"true\" style=\"display:none;\"></video>\n  <canvas id=\"canvas\" style=\"width:640px; height:480px;\"></canvas>\n\n  <md-grid-list cols=\"1\" rowHeight=\"30px\">\n    <md-grid-tile\n        *ngFor=\"let item of items; let i = index \">\n      {{item}}\n    </md-grid-tile>\n  </md-grid-list>\n\n  <div class=\"actions\">\n    <!-- <button md-raised-button color=\"warn\" (click)=\"stop()\">Stop</button> -->\n    <button md-raised-button color=\"accent\" (click)=\"clean()\">Clean</button>\n  </div>\n\n</md-card>\n"
 
 /***/ }),
 
 /***/ 863:
 /***/ (function(module, exports) {
 
-module.exports = "\n<md-card>\n\n  <md-input-container class=\"full-width\">\n    <textarea mdInput\n              [(ngModel)]=\"msg\"\n              placeholder=\"message\"\n              (keyup)=\"keyup()\"\n              rows=\"5\"></textarea>\n  </md-input-container>\n\n  <md-input-container class=\"full-width\">\n    <input mdInput\n           [(ngModel)]=\"privkey\"\n           placeholder=\"privkey\"\n           (keyup)=\"keyup()\"\n           align=\"start\"/>\n  </md-input-container>\n\n  <p>Signed Message</p>\n\n  <md-input-container class=\"full-width\">\n    <textarea mdInput\n              [(ngModel)]=\"signedMsg\"\n              placeholder=\"signed message\"\n              rows=\"8\"\n              readonly></textarea>\n  </md-input-container>\n\n</md-card>\n"
+module.exports = "\n<md-card>\n\n  <md-input-container class=\"full-width\">\n    <input mdInput\n           [(ngModel)]=\"privkey\"\n           placeholder=\"Privkey\"\n           (change)=\"privkeyUpdate()\"\n           (keyup)=\"privkeyUpdate()\"\n           align=\"start\"/>\n  </md-input-container>\n\n  <md-card class=\"align-left\" *ngIf=\"srcAddr\">\n    <md-card-content>\n      <div>Related Address: {{srcAddr}}</div>\n      <div *ngIf=\"unspents\">Unspent Outputs: {{unspents.length}}</div>\n      <div *ngIf=\"unspents\">Unspent Value: {{sumValue(unspents)}}</div>\n    </md-card-content>\n  </md-card>\n\n  <md-input-container class=\"full-width\">\n    <input mdInput\n           [(ngModel)]=\"address\"\n           placeholder=\"Destination Address\"\n           (change)=\"updateSummary()\"\n           (keyup)=\"updateSummary()\"\n           align=\"start\"/>\n  </md-input-container>\n\n  <md-input-container class=\"full-width\">\n    <input mdInput\n           type=\"number\"\n           min=\"0\"\n           step=\"0.0001\"\n           max=\"0.005\"\n           [(ngModel)]=\"networkFee\"\n           placeholder=\"Network Fee\"\n           (change)=\"updateSummary()\"\n           (keyup)=\"updateSummary()\"\n           align=\"start\"/>\n  </md-input-container>\n\n  <md-slide-toggle [(ngModel)]=\"doServiceFee\"\n                   (change)=\"updateSummary()\"\n                   mdTooltip=\"If you like this tool, please pay a little fee within this transaction, because it will help developing and maintaing this and other tools.\">\n    Pay Service Fee\n  </md-slide-toggle>\n\n  <md-card *ngIf=\"receiveAmount && !txHash\">\n    <md-card-title>Transaction Summary</md-card-title>\n    <md-card-content>\n      {{receiveAmount}} BTC => {{address}}\n    </md-card-content>\n  </md-card>\n\n  <md-card *ngIf=\"txHash\">\n    <md-card-title>Transaction Sent</md-card-title>\n    <md-card-content>\n      <a href=\"https://blockchain.info/pl/tx/{{txHash}}\" target=\"_blank\">\n        https://blockchain.info/pl/tx/{{txHash}}\n      </a>\n    </md-card-content>\n    <md-card-footer>\n      <button md-raised-button\n              color=\"accent\"\n              (click)=\"txHash = ''\">\n        OK\n      </button>\n    </md-card-footer>\n  </md-card>\n\n  <div class=\"actions\">\n    <button md-raised-button\n            color=\"accent\"\n            (click)=\"clean()\">\n      Clean\n    </button>\n\n    <button md-raised-button\n            color=\"primary\"\n            (click)=\"send()\"\n            [disabled]=\"!receiveAmount || txHash\">\n      Send Transaction\n    </button>\n  </div>\n\n</md-card>\n"
 
 /***/ }),
 
 /***/ 864:
 /***/ (function(module, exports) {
 
+module.exports = "\n<md-card>\n\n  <md-input-container class=\"full-width\">\n    <textarea mdInput\n              [(ngModel)]=\"msg\"\n              placeholder=\"message\"\n              (keyup)=\"keyup()\"\n              rows=\"5\"></textarea>\n  </md-input-container>\n\n  <md-input-container class=\"full-width\">\n    <input mdInput\n           [(ngModel)]=\"privkey\"\n           placeholder=\"privkey\"\n           (keyup)=\"keyup()\"\n           align=\"start\"/>\n  </md-input-container>\n\n  <p>Signed Message</p>\n\n  <md-input-container class=\"full-width\">\n    <textarea mdInput\n              [(ngModel)]=\"signedMsg\"\n              placeholder=\"signed message\"\n              rows=\"8\"\n              readonly></textarea>\n  </md-input-container>\n\n</md-card>\n"
+
+/***/ }),
+
+/***/ 865:
+/***/ (function(module, exports) {
+
 module.exports = "\n<md-card>\n\n  <md-input-container class=\"full-width\">\n    <input mdInput\n           [(ngModel)]=\"startsWith\"\n           placeholder=\"Starts With\"\n           align=\"start\"/>\n  </md-input-container>\n\n  <md-slide-toggle [(ngModel)]=\"ignoreCase\">\n    Ignore Case\n  </md-slide-toggle>\n\n  <md-input-container class=\"full-width\">\n    <input mdInput\n           [(ngModel)]=\"limit\"\n           placeholder=\"Addresses Limit\"\n           align=\"start\"/>\n  </md-input-container>\n\n  <md-select placeholder=\"Number of Threads\"\n             class=\"full-width\"\n             [(ngModel)]=\"threads\"\n             (change)=\"scale()\"\n             name=\"threads\">\n    <md-option *ngFor=\"let core of cores\" [value]=\"core\">\n      {{core}}\n    </md-option>\n  </md-select>\n\n  <md-card>\n    <table class=\"full-width\">\n      <tr>\n        <td>Address</td>\n        <td>Privkey</td>\n      </tr>\n      <tr\n          *ngFor=\"let item of found\">\n        <td>{{item.address}}</td>\n        <td>{{item.privkey}}</td>\n      </tr>\n    </table>\n\n    <div>\n      Checked Addresses: {{addressCnt}}\n    </div>\n  </md-card>\n\n  <div class=\"actions\">\n    <button md-raised-button\n            color=\"accent\"\n            (click)=\"clean()\">\n      Clean\n    </button>\n\n    <button md-raised-button\n            *ngIf=\"workers.length === 0\"\n            color=\"primary\"\n            [disabled]=\"found.length >= limit\"\n            (click)=\"generate()\">\n      Start Generating\n    </button>\n\n    <button md-raised-button\n            *ngIf=\"workers.length !== 0\"\n            color=\"primary\"\n            (click)=\"terminateWorkers()\">\n      Stop Generating\n    </button>\n  </div>\n\n</md-card>\n"
 
 /***/ }),
 
-/***/ 915:
+/***/ 916:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(510);
+module.exports = __webpack_require__(511);
 
 
 /***/ }),
 
-/***/ 94:
+/***/ 95:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1387,15 +1522,16 @@ var BitcoreService = (function () {
         this.message = window['require']('bitcore-message');
         this.ecies = window['require']('bitcore-ecies');
     }
-    BitcoreService = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* Injectable */])(), 
-        __metadata('design:paramtypes', [])
-    ], BitcoreService);
     return BitcoreService;
 }());
+BitcoreService = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* Injectable */])(),
+    __metadata("design:paramtypes", [])
+], BitcoreService);
+
 //# sourceMappingURL=/Users/gkucmierz/learn/coin-tools/src/bitcore.service.js.map
 
 /***/ })
 
-},[915]);
-//# sourceMappingURL=main.bundle.map
+},[916]);
+//# sourceMappingURL=main.bundle.js.map
